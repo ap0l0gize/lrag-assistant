@@ -6,7 +6,7 @@ load_dotenv()
 
 @dataclass
 class Config:
-    groq_api_key: str
+    openrouter_api_key: str
     neo4j_url: str
     neo4j_username: str
     neo4j_password: str
@@ -19,7 +19,7 @@ class Config:
     @classmethod
     def from_env(cls):
         required = {
-            'GROQ_API_KEY':   os.getenv("GROQ_API_KEY"),
+            'OPENROUTER_API_KEY': os.getenv("OPENROUTER_API_KEY"),
             'NEO4J_USERNAME': os.getenv("NEO4J_USERNAME"),
             'NEO4J_PASSWORD': os.getenv("NEO4J_PASSWORD"),
         }
@@ -27,7 +27,7 @@ class Config:
         if missing:
             raise ValueError(f"Missing env vars: {missing}")
         return cls(
-            groq_api_key=required['GROQ_API_KEY'],
+            openrouter_api_key=required['OPENROUTER_API_KEY'],
             neo4j_url=os.getenv("NEO4J_URL", "bolt://localhost:7687"),
             neo4j_username=required['NEO4J_USERNAME'],
             neo4j_password=required['NEO4J_PASSWORD'],

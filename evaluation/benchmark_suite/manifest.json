@@ -1,0 +1,21 @@
+{
+  "version": "2.1",
+  "description": "Benchmark hybrid vs agentic — 14 case'ów (9 rag_benchmark + 2 showcase + 3 security)",
+  "suites": [
+    {
+      "id": "rag_benchmark",
+      "file": "rag_benchmark.json",
+      "description": "9 scenariuszy z RAG_benchmark/document.tex (bez zmian)"
+    },
+    {
+      "id": "agentic_showcase",
+      "file": "agentic_showcase.json",
+      "description": "2 przypadki: filter/explainability + guard injection"
+    },
+    {
+      "id": "security",
+      "file": "security.json",
+      "description": "3 przypadki: jailbreak, injection, off-topic"
+    }
+  ]
+}

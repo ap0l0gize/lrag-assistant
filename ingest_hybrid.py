@@ -410,7 +410,7 @@ def run_full_ingest():
         logger.warning(f"Brak folderu: {graph_csv_folder}")
 
     # 2. Vector store — PDFy do RAG
-    rag_folder = "data/RAG DATA/"
+    rag_folder = "data/RAG data/"
     if os.path.exists(rag_folder):
         ingest_pdfs(rag_folder, vector_store)
     else:

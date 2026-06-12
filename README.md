@@ -1,3 +1,34 @@
+# AGH-AURA — hybrid RAG assistant
+
+## Quickstart
+
+Wymagania: Python 3.11+, [Neo4j](https://neo4j.com/) (lokalnie), [Ollama](https://ollama.com/) z modelem `nomic-embed-text`, klucz [OpenRouter](https://openrouter.ai/).
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\pip install -r requirements.txt
+copy .env.example .env   # uzupełnij OPENROUTER_API_KEY i NEO4J_PASSWORD
+
+# Neo4j musi być uruchomiony; następnie:
+ollama pull nomic-embed-text
+python ingest_hybrid.py    # załaduje CSV + PDF z data/ do Neo4j i Chroma (./db)
+
+python test.py             # demo: vector-only vs baseline hybrid vs agentic
+python test.py --index 0   # jedno pytanie z listy przykładowej
+python test.py --question "Jaki jest próg na Elektronikę stacjonarną?"
+```
+
+`db/` nie jest w repozytorium — po `ingest_hybrid.py` powstaje lokalnie w `./db`. Bez Neo4j, Ollama lub ingestu demo nie zadziała.
+
+Inne punkty wejścia:
+- `python -m agents.cli "pytanie" -v` — tylko pipeline agentowy
+- `python evaluation/run_eval.py` — pełny benchmark (legacy)
+- `python evaluation/run_eval.py --suite all` — benchmark v2
+
+Szczegóły architektury: [`docs/AGENTIC_ARCHITECTURE.md`](docs/AGENTIC_ARCHITECTURE.md).
+
+---
+
 # Ontologia grafu (Relacje i węzły)
 
 

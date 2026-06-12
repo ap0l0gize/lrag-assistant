@@ -1,0 +1,231 @@
+[
+  {
+    "id": "rb_terminy_001",
+    "suite": "rag_benchmark",
+    "question": "Jaki jest termin rozpoczęcia i zakończenia 1 cyklu rekrutacji na I stopień studiów stacjonarnych?",
+    "category": "terminy",
+    "tags": ["multi_constraint_binding", "graph_favored", "semantic_trap"],
+    "reasoning": {
+      "source": "RAG_benchmark/document.tex",
+      "hypothesis": "Graf wiąże tabela→kontekst→cykl; wektor myli cykle rekrutacyjne (np. 23.07 zamiast 11.07).",
+      "rag_benchmark_winner": "graph",
+      "agentic_should_help": "Filter odrzuca PDF-y z innym cyklem; fact-check pilnuje dat."
+    },
+    "assertions": {
+      "must_contain_any": [["1.06", "1 czerwca", "1 czerwca"], ["11.07", "11 lipca"]],
+      "must_not_contain": ["23.07"],
+      "expect_blocked": false
+    },
+    "agentic_expectations": {
+      "expect_grounded": true,
+      "min_filter_keep": 1,
+      "expect_clarify": false,
+      "expect_trace_has": ["filter", "fact_check"]
+    }
+  },
+  {
+    "id": "rb_osiagniecia_001",
+    "suite": "rag_benchmark",
+    "question": "Za jakie osiągnięcia sportowe mogę zdobyć dodatkowe punkty aplikując na studia i ile tych punktów maksymalnie mogę dostać?",
+    "category": "osiagniecia",
+    "tags": ["multi_document", "numeric_trap_150_vs_300", "graph_favored"],
+    "reasoning": {
+      "source": "RAG_benchmark/document.tex",
+      "hypothesis": "Wektor łapie fragment z 150 pkt; graf łączy dyscypliny z max 300 pkt.",
+      "rag_benchmark_winner": "graph",
+      "agentic_should_help": "Filter odrzuca mylące fragmenty PDF z błędną liczbą punktów."
+    },
+    "assertions": {
+      "must_contain": ["300"],
+      "must_not_contain": ["maksymalnie możesz otrzymać do 150"],
+      "expect_blocked": false
+    },
+    "agentic_expectations": {
+      "expect_grounded": true,
+      "min_filter_keep": 1,
+      "expect_clarify": false,
+      "expect_trace_has": ["filter", "fact_check"]
+    }
+  },
+  {
+    "id": "rb_matury_auto_001",
+    "suite": "rag_benchmark",
+    "question": "Jakie przedmioty maturalne są wymagane na kierunku Automatyka i Robotyka?",
+    "category": "matury",
+    "tags": ["logic_loss_albo", "vector_favored"],
+    "reasoning": {
+      "source": "RAG_benchmark/document.tex",
+      "hypothesis": "Graf gubi logikę XOR/albo — flatten do listy AND; wektor zachowuje oryginalny tekst z 'albo'.",
+      "rag_benchmark_winner": "vector",
+      "agentic_should_help": "Fact-check może wykryć niespójność, ale graf nadal podaje błędną strukturę."
+    },
+    "assertions": {
+      "must_contain_any": [["albo", "jeden z", "wybrać"]],
+      "must_not_contain": ["Matematyka, Fizyka oraz Informatyka", "Matematyka, Fizyka i Informatyka"],
+      "expect_blocked": false
+    },
+    "agentic_expectations": {
+      "expect_grounded": null,
+      "min_filter_keep": 1,
+      "expect_clarify": false,
+      "expect_trace_has": ["filter", "fact_check"]
+    }
+  },
+  {
+    "id": "rb_progi_filter_001",
+    "suite": "rag_benchmark",
+    "question": "Wymień mi 3 kierunki stacjonarne, na które próg punktowy wynosił poniżej 700 punktów.",
+    "category": "progi",
+    "tags": ["numeric_filter", "retrieval_failure_vector", "graph_favored"],
+    "reasoning": {
+      "source": "RAG_benchmark/document.tex",
+      "hypothesis": "Graf filtruje prog_min < 700; wektor myli progi z punktami ECTS.",
+      "rag_benchmark_winner": "graph",
+      "agentic_should_help": "Filter odrzuca regulamin ECTS; graf dostarcza poprawne kierunki."
+    },
+    "assertions": {
+      "must_contain_any": [
+        ["Elektrotechnika", "502"],
+        ["Inżynieria Metali", "341"],
+        ["Ceramika", "377"]
+      ],
+      "must_not_contain": ["nie posiadam informacji", "brak danych"],
+      "expect_blocked": false
+    },
+    "agentic_expectations": {
+      "expect_grounded": true,
+      "min_filter_keep": 1,
+      "expect_clarify": false,
+      "expect_trace_has": ["filter", "fact_check"]
+    }
+  },
+  {
+    "id": "rb_stypendium_001",
+    "suite": "rag_benchmark",
+    "question": "Kto dokładnie może ubiegać się o stypendium socjalne na AGH i jakie kryterium dochodowe / warunki formalne trzeba spełnić?",
+    "category": "stypendium",
+    "tags": ["graph_empty", "pdf_only_domain", "vector_favored"],
+    "reasoning": {
+      "source": "RAG_benchmark/document.tex",
+      "hypothesis": "Graf nie ma węzłów stypendialnych; odpowiedź jest w PDF regulaminu.",
+      "rag_benchmark_winner": "vector",
+      "agentic_should_help": "Filter musi zachować PDF; ryzyko filter_empty jeśli graf pusty a PDF odrzucony."
+    },
+    "assertions": {
+      "must_contain_any": [
+        ["dochód", "dochod"],
+        ["stypendium socjalne", "stypendium"],
+        ["student", "studenci"]
+      ],
+      "expect_blocked": false
+    },
+    "agentic_expectations": {
+      "expect_grounded": null,
+      "min_filter_keep": 1,
+      "expect_clarify": false,
+      "expect_trace_has": ["filter"]
+    }
+  },
+  {
+    "id": "rb_egzamin_001",
+    "suite": "rag_benchmark",
+    "question": "Czy dyplom technika informatyka (351203) daje punkty przy rekrutacji na kierunek Informatyka i Systemy Inteligentne?",
+    "category": "egzaminy",
+    "tags": ["relation_lookup", "list_mapping", "graph_favored"],
+    "reasoning": {
+      "source": "RAG_benchmark/document.tex",
+      "hypothesis": "Graf mapuje kwalifikację zawodową na wskaźnik P2; wektor myli z egzaminem dyplomowym.",
+      "rag_benchmark_winner": "graph",
+      "agentic_should_help": "Filter odrzuca regulamin studiów o egzaminie dyplomowym."
+    },
+    "assertions": {
+      "must_contain_any": [["P2", "p2"], ["tak", "daje", "uprawnia"]],
+      "must_not_contain": ["nie posiadam", "brak informacji"],
+      "expect_blocked": false
+    },
+    "agentic_expectations": {
+      "expect_grounded": true,
+      "min_filter_keep": 1,
+      "expect_clarify": false,
+      "expect_trace_has": ["filter", "fact_check"]
+    }
+  },
+  {
+    "id": "rb_wzory_001",
+    "suite": "rag_benchmark",
+    "question": "Jak obliczyć wskaźnik rekrutacyjny dla kandydatów z nową maturą?",
+    "category": "wzory",
+    "tags": ["formula_lookup"],
+    "reasoning": {
+      "source": "RAG_benchmark/document.tex",
+      "hypothesis": "Wzór WR występuje w grafie i PDF; oba pipeline powinny go znaleźć.",
+      "rag_benchmark_winner": "both",
+      "agentic_should_help": "Fact-check weryfikuje poprawność wzoru w odpowiedzi."
+    },
+    "assertions": {
+      "must_contain_any": [
+        ["WR", "wskaźnik rekrutacyjny"],
+        ["2", "M", "P1", "P2"]
+      ],
+      "expect_blocked": false
+    },
+    "agentic_expectations": {
+      "expect_grounded": true,
+      "min_filter_keep": 1,
+      "expect_clarify": false,
+      "expect_trace_has": ["filter", "fact_check"]
+    }
+  },
+  {
+    "id": "rb_calc_wr_001",
+    "suite": "rag_benchmark",
+    "question": "Na bazie wzorów rekrutacyjnych i progów dla Informatyki stosowanej, oblicz, czy dostanę się na studia, jeśli z matematyki rozszerzonej mam 79%, a z informatyki rozszerzonej 65%, a z języka angielskiego rozszerzonego 80%, a z matematyki na podstawowym 100%?",
+    "category": "wzory",
+    "tags": ["multi_hop_math", "threshold_compare", "graph_favored"],
+    "reasoning": {
+      "source": "RAG_benchmark/document.tex",
+      "hypothesis": "Wymaga wzoru WR + progu 829; wektor nie znajduje Informatyki Stosowanej w top-k.",
+      "rag_benchmark_winner": "graph",
+      "agentic_should_help": "Graf dostarcza wzór i próg; fact-check weryfikuje obliczenia."
+    },
+    "assertions": {
+      "must_contain_any": [
+        ["804", "nie dostan", "nie dostaniesz", "poniżej progu", "ponizej progu"],
+        ["829"]
+      ],
+      "expect_blocked": false
+    },
+    "agentic_expectations": {
+      "expect_grounded": true,
+      "min_filter_keep": 1,
+      "expect_clarify": false,
+      "expect_trace_has": ["filter", "fact_check"]
+    }
+  },
+  {
+    "id": "rb_multi_001",
+    "suite": "rag_benchmark",
+    "question": "Jeśli dostałem się na Budownictwo stacjonarne, ale po 1 semestrze uznam, że to błąd i chcę przenieść się na Inżynierię Materiałową (ile na tym kierunku było osób na jedno miejsce?), to czy Regulamin Studiów AGH pozwala na takie przeniesienie i co muszę zrobić?",
+    "category": "multi_intent",
+    "tags": ["multi_intent", "nlg_semantic_inversion", "graph_favored"],
+    "reasoning": {
+      "source": "RAG_benchmark/document.tex",
+      "hypothesis": "Dwa intenty: regulamin przeniesienia + statystyki kierunku; wektor gubi wątek w nawiasie.",
+      "rag_benchmark_winner": "graph",
+      "agentic_should_help": "Trace pokazuje multi-intent retrieval; filter łączy graf i PDF."
+    },
+    "assertions": {
+      "must_contain_any": [
+        ["przenies", "przeniesienie", "wniosek", "dziekan"],
+        ["2,9", "2.9", "176", "60", "miejsc"]
+      ],
+      "expect_blocked": false
+    },
+    "agentic_expectations": {
+      "expect_grounded": true,
+      "min_filter_keep": 1,
+      "expect_clarify": false,
+      "expect_trace_has": ["filter", "fact_check"]
+    }
+  }
+]
