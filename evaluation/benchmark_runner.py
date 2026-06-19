@@ -62,7 +62,7 @@ def preflight_checks() -> bool:
         _log("  [FAIL] OPENROUTER_API_KEY: brak lub nieprawidłowy format (oczekiwane sk-or-...)")
         ok = False
     else:
-        model_name = os.getenv("LLM_MODEL", "meta-llama/llama-3.3-70b-instruct")
+        model_name = os.getenv("LLM_MODEL", "openai/gpt-4o-mini")
         _log(f"  [OK]   OPENROUTER_API_KEY: ustawiony, model={model_name}")
 
     try:

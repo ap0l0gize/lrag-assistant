@@ -1,0 +1,316 @@
+popatrz na to, jak to jest zbudowane w latex, dodaj na tej samej zasadzie nasze pytania, niech to będą wszyskie, powklejaj tam odpowiedzi w Standardowy RAG, GraphRag (hybrid), i naszą agentową stukruę, daj blue print pod wnioski i obserwacje jezeli jestes w stanie cos wymyslic, staraj sie jak najbardziej profejonalenie \section*{Porównanie: Termin 1 cyklu rekrutacji na I stopień studiów stacjonarnych}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Pytanie użytkownika]
+    Jaki jest termin rozpoczęcia i zakończenia 1 cyklu rekrutacji na I stopień studiów stacjonarnych?
+\end{tcolorbox}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{} XX @{}}
+    \toprule
+    \textbf{Standardowy RAG} & \textbf{GraphRAG (Hybrid)} \\
+    \midrule
+    \small 
+    Termin rozpoczęcia 1 cyklu rekrutacji na I stopień studiów stacjonarnych to 1.06, a zakończenia 23.07 do godz. 14:00.
+    & 
+    \small 
+    Termin rozpoczęcia 1 cyklu rekrutacji na I stopień studiów stacjonarnych to 1 czerwca, a zakończenia 11 lipca do godz. 14:00. \\
+    \bottomrule
+\end{tabularx}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!50!black,title=Wnioski i obserwacje]
+    \begin{itemize}
+        \item \textbf{Wysoka precyzja GraphRAG:} System oparty na grafach bezbłędnie poradził sobie z uszczegółowionym pytaniem. Dzięki strukturze grafu (tabela $\rightarrow$ kontekst kierunku $\rightarrow$ cykl 1) zlokalizował dokładną datę z właściwej kolumny (1.06 - 11.07), w pełni poprawnie interpretując treść z obrazka.
+        \item \textbf{Błąd dopasowania kontekstu (Standard RAG):} Standardowy RAG udzielił błędnej odpowiedzi. Silnik wektorowy odnalazł fragment innego dokumentu, który pasował semantycznie ("Cykl rekrutacyjny 1", "Złożenie i opłacenie"), ale dotyczył innej formy studiów (gdzie data to 23.07). Wynika to z faktu, że wektory słabo radzą sobie z rygorystycznym wiązaniem wielu warunków naraz (I stopień + stacjonarne + cykl 1).
+        \item \textbf{Interpretacja pojęcia "zakończenia":} Oba modele domyślnie zinterpretowały "zakończenie rekrutacji" jako zamknięcie systemu e-Rekrutacja, a nie ostateczny termin wpisu na listę studentów (kończący się 18.07).
+    \end{itemize}
+\end{tcolorbox}
+\vspace{1em}
+
+\newpage
+
+\section*{Porównanie: Punkty za osiągnięcia sportowe w rekrutacji}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Pytanie użytkownika]
+    Za jakie osiągnięcia sportowe mogę zdobyć dodatkowe punkty aplikując na studia i ile tych punktów maksymalnie mogę dostać?
+\end{tcolorbox}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{} XX @{}}
+    \toprule
+    \textbf{Standardowy RAG} & \textbf{GraphRAG (Hybrid)} \\
+    \midrule
+    \small 
+    Możesz zdobyć dodatkowe punkty za osiągnięcia sportowe, a maksymalnie możesz otrzymać do 150 punktów.
+    & 
+    \small 
+    Możesz zdobyć dodatkowe punkty aplikując na studia za osiągnięcia sportowe w różnych dyscyplinach, takich jak strzelectwo, żeglarstwo, wspinaczka, wioślarstwo, unihokej, trójbój siłowy, tenis, szermierka, szachy, i wiele innych. Maksymalnie możesz zdobyć 300 punktów za każde z tych osiągnięć, w zależności od posiadanej klasy sportowej:
+    \begin{itemize}
+        \item 300 punktów - klasa mistrzowska międzynarodowa lub klasa mistrzowska
+        \item 150 punktów - pierwsza klasa sportowa
+        \item 100 punktów - druga klasa sportowa
+    \end{itemize}
+    Dodatkowo, za osiągnięcia w sportach olimpijskich, paralimpijskich lub w Akademickich Mistrzostwach Polski, punkty przyznawane są w zależności od miejsca zajętego w zawodach. \\
+    \bottomrule
+\end{tabularx}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!50!black,title=Wnioski i obserwacje]
+    \begin{itemize}
+        \item \textbf{Synergia danych w GraphRAG (Multi-document reasoning):} Graf wiedzy poprawnie połączył informacje. Model wymienił konkretne dyscypliny i podał prawidłową wartość maksymalną (300 punktów).
+        \item \textbf{Uporczywy błąd standardowego RAG:} Zwykły RAG popełnił błąd. Silnik wektorowy "łapie" fragment z wyciągniętym ciągiem znaków "150 pkt" (dotyczącym innej tabelki), ignorując zupełnie właściwe zasady, co udowadnia, że RAG oparty tylko na wektorach jest bardzo podatny na zmyłki semantyczne.
+    \end{itemize}
+\end{tcolorbox}
+\vspace{1em}
+
+\newpage
+
+\section*{Porównanie: Wymagane przedmioty maturalne (Automatyka i Robotyka)}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Pytanie użytkownika]
+    Jakie przedmioty maturalne są wymagane na kierunku Automatyka i Robotyka?
+\end{tcolorbox}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{} XX @{}}
+    \toprule
+    \textbf{Standardowy RAG} & \textbf{GraphRAG (Hybrid)} \\
+    \midrule
+    \small 
+    Aby dostać się na Automatykę i Robotykę, potrzebne są przedmioty maturalne: matematyka albo fizyka albo informatyka. Dodatkowo, w drugim przedmiocie można wybrać matematyka, fizyka, informatyka albo język obcy.
+    & 
+    \small 
+    Aby dostać się na kierunek Automatyka i Robotyka, wymagane są następujące przedmioty maturalne: Matematyka, Fizyka oraz Informatyka. Dodatkowo, w drugim przedmiocie maturalnym można wybrać Język Obcy. \\
+    \bottomrule
+\end{tabularx}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=Wnioski i obserwacje]
+    \begin{itemize}
+        \item \textbf{Utrata relacji logicznych w grafie:} GraphRAG popełnił krytyczny błąd merytoryczny. Wyciągając dane z tabeli, system zapisał przedmioty jako prostą listę encji przypisanych do kolumn P1 i P2, całkowicie gubiąc słowo "albo" (logiczne LUB/XOR). W efekcie model językowy błędnie założył, że wymagane są \textbf{wszystkie} te przedmioty naraz ("Matematyka, Fizyka oraz Informatyka").
+        \item \textbf{Sukces surowego tekstu (Standard RAG):} Standardowy RAG poradził sobie z tym zapytaniem znacznie lepiej. Ponieważ silnik wektorowy zwrócił oryginalny wycinek tekstu, w którym słowo "albo" ocalało, model wygenerował w pełni poprawną odpowiedź zgodną z rzeczywistymi warunkami (kandydat wybiera jeden z tych przedmiotów).
+    \end{itemize}
+\end{tcolorbox}
+\vspace{1em}
+
+\newpage
+
+\section*{Porównanie: Kierunki stacjonarne z progiem poniżej 700 punktów}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Pytanie użytkownika]
+    Wymień mi 3 kierunki stacjonarne, na które próg punktowy wynosił poniżej 700 punktów.
+\end{tcolorbox}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{} XX @{}}
+    \toprule
+    \textbf{Standardowy RAG} & \textbf{GraphRAG (Hybrid)} \\
+    \midrule
+    \small 
+    Nie posiadam informacji na temat progów punktowych dla kierunków studiów. Proszę sprawdzić aktualne dane na stronie uczelni lub w dokumentach rekrutacyjnych.
+    & 
+    \small 
+    Trzy kierunki stacjonarne, na które próg punktowy wynosił poniżej 700 punktów, to:
+    \begin{enumerate}
+        \item Elektrotechnika (prog\_min: 502)
+        \item Inżynieria Metali Nieżelaznych (prog\_min: 341)
+        \item Ceramika (prog\_min: 377)
+    \end{enumerate} \\
+    \bottomrule
+\end{tabularx}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!50!black,title=Wnioski i obserwacje]
+    \begin{itemize}
+        \item \textbf{Przewaga danych strukturyzowanych (GraphRAG):} Model hybrydowy doskonale poradził sobie z filtrowaniem numerycznym (próg $<700$) i kategorycznym (tryb stacjonarny). Dzięki przypisaniu atrybutów do węzłów grafu (np. \texttt{prog\_min}), system potrafił zrozumieć zależność matematyczną i zwrócić poprawne wyniki.
+        \item \textbf{Błąd semantyczny wyszukiwania wektorowego (Standard RAG):} Standardowy RAG zaliczył całkowitą porażkę w doborze kontekstu (Retrieval failure). Szukając słowa "punktowy/punktów", algorytm pobrał dokumenty dotyczące punktów ECTS z Regulaminu Studiów, całkowicie omijając tabelę z progami rekrutacyjnymi.
+        \item \textbf{Ograniczenia wektorów w analityce:} Zwykłe bazy wektorowe mają ogromne trudności z zadaniami wymagającymi sortowania, filtrowania i operowania na ułamkach czy liczbach. Wektory sprawdzają się w szukaniu podobieństwa znaczeniowego, a nie w zapytaniach bazodanowych, co udowadnia sukces ustrukturyzowanego podejścia GraphRAG.
+    \end{itemize}
+\end{tcolorbox}
+\vspace{1em}
+
+\newpage
+
+\section*{Porównanie: Warunki i kryteria stypendium socjalnego}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Pytanie użytkownika]
+    Kto dokładnie może ubiegać się o stypendium socjalne na AGH i jakie kryterium dochodowe / warunki formalne trzeba spełnić?
+\end{tcolorbox}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{} XX @{}}
+    \toprule
+    \textbf{Standardowy RAG} & \textbf{GraphRAG (Hybrid)} \\
+    \midrule
+    \small 
+    O stypendium socjalne na AGH mogą ubiegać się studenci, w tym cudzoziemcy, którzy spełniają określone kryteria dochodowe oraz formalne. Kryteria dochodowe nie są dokładnie określone w kontekście, ale stypendium przysługuje w szczególnych sytuacjach, takich jak półsieroctwo, ciężka choroba członka rodziny, pobieranie zasiłku z pomocy społecznej lub zamieszkanie w domu studenckim AGH. Wymagane jest również rzetelne udokumentowanie przesłanek w dniu wydania decyzji.
+    & 
+    \small 
+    O stypendium socjalne na AGH mogą ubiegać się studenci, w tym cudzoziemcy, na zasadach obowiązujących obywateli polskich. Kryterium dochodowe ustala się na podstawie dochodu netto na osobę w rodzinie studenta, uwzględniając dochody studenta, małżonka, dzieci oraz rodziców lub opiekunów. Dodatkowo, student może otrzymać stypendium w zwiększonej wysokości w szczególnych przypadkach, takich jak sieroctwo, ciężka choroba członka rodziny, pobieranie zasiłku z pomocy społecznej czy zamieszkanie w domu studenckim AGH. Przesłanki te muszą być udokumentowane w dniu wydania decyzji. \\
+    \bottomrule
+\end{tabularx}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=Wnioski i obserwacje]
+    \begin{itemize}
+        \item \textbf{Porażka grafu:} Silnik GraphRAG nie odnalazł żadnych węzłów dla tego zapytania (\texttt{Brak wyników}). System automatycznie przeszedł w tryb awaryjny (Fallback), opierając odpowiedź wyłącznie na tych samych słabych wektorach co standardowy RAG.
+        \item \textbf{Przesunięcie uwagi:} Oba modele nie odpowiedziały poprawnie na pytanie o \textit{podstawowe} zasady stypendium socjalnego. Algorytmy wektorowe "złapały" fragmenty o stypendium w \textit{zwiększonej} wysokości oraz o cudzoziemcach ponieważ miały one silniejsze nasycenie słowami kluczowymi. W efekcie standardowy RAG zaczął wręcz twierdzić, że zwykłe stypendium przysługuje m.in. za "zamieszkanie w akademiku" (co jest absurdem i dotyczy tylko dodatku).
+        \item \textbf{Ograniczenia dokumentu źródłowego:} Żaden z modeli nie podał konkretnej kwoty progu dochodowego. Wynika to z faktu, że sam Regulamin nie definiuje twardej kwoty (jest ona ogłaszana corocznym komunikatem Rektora). Modele jednak nie potrafiły tego jasno wyartykułować na bazie pobranych skrawków tekstu.
+    \end{itemize}
+\end{tcolorbox}
+\vspace{1em}
+
+\newpage
+
+\section*{Porównanie: Punkty rekrutacyjne za dyplom zawodowy (Technik Informatyk)}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Pytanie użytkownika]
+    Posiadam dyplom technika informatyka. Czy ten egzamin zawodowy daje mi jakieś przywileje lub punkty przy rekrutacji na Informatykę i Systemy Inteligentne?
+\end{tcolorbox}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{} XX @{}}
+    \toprule
+    \textbf{Standardowy RAG} & \textbf{GraphRAG (Hybrid)} \\
+    \midrule
+    \small 
+    Nie znalazłem informacji na temat przywilejów lub punktów przy rekrutacji na Informatykę i Systemy Inteligentne w związku z posiadanym dyplomem technika informatyka. Proszę sprawdzić regulamin rekrutacji lub skontaktować się z uczelnią w celu uzyskania dokładnych informacji.
+    & 
+    \small 
+    Tak, dyplom technika informatyka (351203) daje punkty przy rekrutacji na kierunek Informatyka i Systemy Inteligentne jako wskaźnik P2. \\
+    \bottomrule
+\end{tabularx}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!50!black,title=Wnioski i obserwacje]
+    \begin{itemize}
+        \item \textbf{Precyzyjne mapowanie relacji (GraphRAG):} Model oparty na grafach wiedzy zadziałał w tym przypadku perfekcyjnie. Powiązanie konkretnego kierunku z długą listą akceptowanych kwalifikacji zawodowych to typowy problem relacyjny. Graf bezbłędnie zidentyfikował węzeł kierunku i odczytał z jego atrybutów, że dyplom "Technika informatyka" zamienia się wprost na wskaźnik rekrutacyjny P2.
+        \item \textbf{Zgubny wpływ "szumu semantycznego" (Standard RAG):} Standardowy silnik wektorowy zanotował całkowitą porażkę. Szukając słów "egzamin" i "dyplom", algorytm pobrał z bazy fragmenty \textit{Regulaminu Studiów} opowiadające o egzaminach dyplomowych na koniec nauki, zamiast sięgnąć do zasad rekrutacji.
+        \item \textbf{Ograniczenia wektorów przy listach:} Ten przykład świetnie udowadnia, że RAG wektorowy słabo radzi sobie z długimi wykazami (np. tabelami zawodów uprawniających do przyjęcia na dany kierunek). Jeśli słowo kluczowe nie leży fizycznie blisko nazwy kierunku w tekście źródłowym, wektor tego nie połączy, podczas gdy graf tworzy bezpośrednie i nierozerwalne "mosty" między takimi informacjami.
+    \end{itemize}
+\end{tcolorbox}
+\vspace{1em}
+
+\newpage
+
+\section*{Porównanie: Obliczanie wskaźnika rekrutacyjnego (WR)}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Pytanie użytkownika]
+    Jak obliczyć wskaźnik rekrutacyjny dla kandydatów z nową maturą?
+\end{tcolorbox}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{} XX @{}}
+    \toprule
+    \textbf{Standardowy RAG} & \textbf{GraphRAG (Hybrid)} \\
+    \midrule
+    \small 
+    Aby obliczyć wskaźnik rekrutacyjny WR dla kandydatów z nową maturą, należy zastosować wzór:
+    
+    $$WR = 2 \cdot M + 6 \cdot P1 + 2 \cdot P2 + D$$
+    
+    gdzie:
+    \begin{itemize}
+        \item M to liczba punktów uzyskanych z przeliczenia wyników z matematyki,
+        \item P1 i P2 to liczby punktów uzyskanych z przeliczenia wyników z przedmiotów uwzględnionych w tabeli 1,
+        \item D to dodatkowe punkty, jeśli są przyznawane.
+    \end{itemize}
+    
+    Należy pamiętać, że do P1 i P2 wybierane są wyniki najkorzystniejsze, a przedmioty nie mogą być takie same.
+    & 
+    \small 
+    Aby obliczyć wskaźnik rekrutacyjny (WR) dla kandydatów z nową maturą, należy skorzystać z następującego wzoru:
+
+    $$WR = 2 * M + 6 * P1 + 2 * P2 + D$$
+
+    gdzie:
+    \begin{itemize}
+        \item M – liczba punktów procentowych uzyskanych w części pisemnej egzaminu maturalnego z matematyki na poziomie podstawowym,
+        \item P1, P2 – liczby punktów procentowych uzyskanych z części pisemnej egzaminu maturalnego na poziomie rozszerzonym z przedmiotu wymienionego w Tabeli 1,
+        \item D – uwzględniane osiągnięcia sportowe lub dodatkowe osiągnięcia kandydata.
+    \end{itemize}
+    
+    Maksymalna wartość WR wynosi 1000 punktów. \\
+    \bottomrule
+\end{tabularx}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!50!black,title=Wnioski i obserwacje]
+    \begin{itemize}
+        \item \textbf{Skuteczność obu metod:} Oba systemy poprawnie zidentyfikowały i odtworzyły prawidłowy wzór na wskaźnik rekrutacji (WR). Jest to spodziewane, ponieważ główny wzór występuje centralnie w dokumentach i łatwo go namierzyć zarówno wektorowo, jak i przez encję grafową ("wzór").
+        \item \textbf{Precyzja zmiennych w GraphRAG:} GraphRAG dostarczył znacznie bardziej precyzyjne definicje zmiennych (np. M -- poziom \textit{podstawowy}, P1/P2 -- poziom \textit{rozszerzony}). Standardowy RAG "zgubił" informację o poziomach matury z powodu faktu, że skleił ze sobą definicje dla matury międzynarodowej (EB/IB) widoczne w swoich logach źródłowych.
+        \item \textbf{Dopełnienie kontekstu (Standard RAG):} Standardowy RAG podał przydatną zasadę o "najkorzystniejszym wyniku" i "nie powtarzaniu przedmiotów", która znajdowała się w innym paragrafie wokół pobranego wektora. Z kolei GraphRAG podał maksymalną pulę punktów (1000 pkt), co wynikało ze zwięzłego opisu właściwości samego węzła.
+    \end{itemize}
+\end{tcolorbox}
+\vspace{1em}
+
+\newpage
+
+\section*{Porównanie: Obliczenie szans na przyjęcie na Informatykę Stosowaną}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Pytanie użytkownika]
+    Na bazie wzorów rekrutacyjnych i progów dla Informatyki stosowanej, oblicz, czy dostanę się na studia, jeśli z matematyki rozszerzonej mam 79\%, a z informatyki rozszerzonej 65\%, a z języka angielskiego rozszerzonego 80\%, a z matematyki na podstawowym 100\%?
+\end{tcolorbox}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{} XX @{}}
+    \toprule
+    \textbf{Standardowy RAG} & \textbf{GraphRAG (Hybrid)} \\
+    \midrule
+    \small 
+    Nie posiadam wystarczających informacji na temat progów punktowych dla Informatyki stosowanej, aby obliczyć, czy się dostaniesz. Proszę sprawdzić aktualne progi na stronie rekrutacji uczelni.
+    & 
+    \small 
+    Aby obliczyć wskaźnik rekrutacji (WR) dla kierunku Informatyka Stosowana, użyjemy wzoru:
+    
+    $$WR = 2 * M + 6 * P1 + 2 * P2 + D$$
+    
+    Gdzie:
+    \begin{itemize}
+        \item $M$ to wynik z matematyki na poziomie podstawowym (100\%),
+        \item $P1$ to wynik z matematyki rozszerzonej (79\%),
+        \item $P2$ to wynik z informatyki rozszerzonej (65\%),
+        \item $D$ to dodatkowe osiągnięcia (zakładamy, że $D = 0$, jeśli nie ma dodatkowych osiągnięć).
+    \end{itemize}
+    
+    Podstawiając wartości:
+    $$WR = 2 * 100 + 6 * 79 + 2 * 65 + 0$$
+    $$WR = 200 + 474 + 130$$
+    $$WR = 804$$
+    
+    Minimalny próg punktowy dla Informatyki Stosowanej wynosi 829 punktów. Zatem, z wynikiem 804 punktów nie dostaniesz się na studia. \\
+    \bottomrule
+\end{tabularx}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!50!black,title=Wnioski i obserwacje]
+    \begin{itemize}
+        \item \textbf{Precyzja i wieloetapowe rozumowanie (Multi-hop reasoning):} GraphRAG poradził sobie ze znalezieniem abstrakcyjnego wzoru i poprawnie zmapował wyniki użytkownika do zmiennych matematycznych, wykonując obliczenia.
+        \item \textbf{Ograniczenia wyszukiwania wektorowego:} Standardowy RAG oparty tylko na podobieństwie tekstu odnalazł dokumenty z progami dla innych kierunków (np. Informatyka Medyczna, Informatyka Techniczna). Ponieważ nie znalazł "Informatyki Stosowanej" w topowych fragmentach, zrezygnował z odpowiedzi, ignorując nawet możliwość podania samego obliczonego wskaźnika.
+    \end{itemize}
+\end{tcolorbox}
+\vspace{1em}
+
+\newpage
+
+\section*{Porównanie: Przeniesienie na inny kierunek i statystyki rekrutacyjne}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Pytanie użytkownika]
+    Jeśli dostałem się na Budownictwo stacjonarne, ale po 1 semestrze uznam, że to błąd i chcę przenieść się na Inżynierię Materiałową (ile na tym kierunku było osób na jedno miejsce?), to czy Regulamin Studiów AGH pozwala na takie przeniesienie i co muszę zrobić?
+\end{tcolorbox}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{} XX @{}}
+    \toprule
+    \textbf{Standardowy RAG} & \textbf{GraphRAG (Hybrid)} \\
+    \midrule
+    \small 
+    Możesz przenieść się na Inżynierię Materiałową po uzyskaniu wpisu na co najmniej drugi semestr. Musisz złożyć wniosek do Dziekana Wydziału przyjmującego oraz spełnić wszystkie obowiązki wobec dotychczasowego Wydziału. Informacja o liczbie osób na jedno miejsce na kierunku Inżynieria Materiałowa nie została podana w dostępnych materiałach.
+    & 
+    \small 
+    Regulamin Studiów AGH pozwala na przeniesienie się na inny kierunek, w tym z Budownictwa na Inżynierię Materiałową, pod warunkiem uzyskania zgody Dziekana Wydziału przyjmującego. Musisz złożyć wniosek o przeniesienie po ukończeniu co najmniej jednego semestru, a także spełnić wszystkie obowiązki wobec uczelni i zaliczyć dotychczasowe moduły zajęć. 
+    
+    Na kierunku Inżynieria Materiałowa było 176 miejsc na 60 kandydatów, co oznacza, że na jedno miejsce przypada około 2,93 osoby. \\
+    \bottomrule
+\end{tabularx}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!50!black,title=Wnioski i obserwacje]
+    \begin{itemize}
+        \item \textbf{Obsługa zapytań wielowątkowych (Multi-intent retrieval):} GraphRAG poradził sobie rewelacyjnie ze znalezieniem odpowiedzi z dwóch zupełnie różnych domen (regulamin studiów oraz tabela z progami punktowymi). Graf zidentyfikował węzeł z kierunkiem i wyciągnął atrybut liczby miejsc, jednocześnie zachowując kontekst prawny z wektorów.
+        \item \textbf{Gubienie wątków przez Standardowy RAG:} Zwykły system oparty na wektorach skupił się na dominującej semantycznie części zapytania (Regulamin, przeniesienie, semestr) i odnalazł świetne fragmenty regulaminu. Całkowicie jednak zignorował wtrącenie w nawiasie dotyczące statystyk, uznając je za szum (tzw. "Missed intent").
+        \item \textbf{Ciekawy błąd generowania języka (NLG Slip) w GraphRAG:} Mimo że GraphRAG poprawnie policzył stosunek $176 / 60 \approx 2,93$, w zdaniu wygenerowanym przez LLM pomylono pojęcia, pisząc "176 miejsc na 60 kandydatów" zamiast "176 kandydatów na 60 miejsc". To przykład na to, że nawet jeśli ustrukturyzowane dane wyciągnięte z grafu (miejsca: 176/60) są poprawne, model językowy formujący ostateczną wypowiedź może popełnić nielogiczny błąd semantyczny.
+    \end{itemize}
+\end{tcolorbox}
+\vspace{1em}, dodaj mi pliki tex ustruktyryzowane na modłę tego, nie zmieniaj wiecej nic, w folderze RAG_benchmark, bazuj to na podstawie tego folderu: evaluation\results\compare\tracesC:\Users\wolny\Documents\projects\agh\6sem\lrag-assistant\evaluation\results\compare\traces

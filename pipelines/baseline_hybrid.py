@@ -27,12 +27,15 @@ ODPOWIEDŹ:
 """)
 
 
-def generate_answer(question: str, verbose: bool = False) -> str:
-    analysis = analyze_query(question)
-    if verbose:
-        print(f"\n[Baseline — analiza] {analysis}")
+def generate_answer_detailed(question: str, verbose: bool = False) -> dict:
+    from retrieval.normalize import normalize_analysis
 
-    graph_context = retrieve_from_graph(analysis)
+    intent_raw = analyze_query(question)
+    intent = normalize_analysis(intent_raw)
+    if verbose:
+        print(f"\n[Baseline — analiza] raw={intent_raw} normalized={intent}")
+
+    graph_context = retrieve_from_graph(intent_raw)
     if verbose:
         preview = graph_context[:600] if graph_context else "Brak wyników"
         print(f"\n[Baseline — graph]\n{preview}")
@@ -49,4 +52,16 @@ def generate_answer(question: str, verbose: bool = False) -> str:
         "graph_context": graph_context or "Brak danych strukturalnych.",
         "vector_context": vector_context or "Brak pasujących dokumentów.",
     })
-    return response.content
+
+    return {
+        "final_answer": response.content,
+        "intent_raw": intent_raw,
+        "intent": intent,
+        "graph_context": graph_context,
+        "vector_context": vector_context,
+        "chunks": chunks,
+    }
+
+
+def generate_answer(question: str, verbose: bool = False) -> str:
+    return generate_answer_detailed(question, verbose=verbose)["final_answer"]

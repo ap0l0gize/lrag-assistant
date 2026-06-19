@@ -1,0 +1,193 @@
+{
+  "id": "kierunki_01",
+  "question": "Kto dokładnie może ubiegać się o stypendium socjalne na AGH i jakie kryterium dochodowe / warunki formalne trzeba spełnić?",
+  "side_by_side": {
+    "vector": {
+      "final_answer": "O stypendium socjalne na AGH mogą ubiegać się studenci, którzy znajdują się w trudnej sytuacji materialnej. Kryterium dochodowe oraz szczegółowe warunki formalne można znaleźć na stronie Działu Spraw Studenckich, gdzie publikowane są również harmonogramy składania wniosków.",
+      "latency_ms": 4675
+    },
+    "hybrid": {
+      "final_answer": "Nie posiadam wystarczających informacji na temat kryteriów dochodowych i warunków formalnych ubiegania się o stypendium socjalne na AGH. Zalecam odwiedzenie strony Działu Spraw Studenckich, gdzie można znaleźć szczegółowe informacje na ten temat.",
+      "latency_ms": 3147
+    },
+    "agentic": {
+      "final_answer": "Nie znalazłem wystarczających danych w bazie wiedzy, aby odpowiedzieć na to pytanie. Brak pasujących fragmentów w bazie wiedzy.",
+      "latency_ms": 4872
+    }
+  },
+  "vector": {
+    "chunks": [
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "Przydatne Strony wydziałowe: Są to strony w domenie agh.edu.pl. Każdy Wydział ma własną stronę, na której mogą znajdować się informacje odnośnie praktyk, kół naukowych, wymian studenckich, współpracy z placówkami z zewnątrz czy też Wydziałowych Rad Samorządu Studentów (tzw. WRSS). Na niektórych Wydziałach obowiązują również zapisy na wizyty w dziekanacie, których dokonuje się właśnie poprzez stronę odpowiedniego Wydziału.  Dział Spraw Studenckich:  Ta strona może Cię zainteresować, jeśli zamierz...",
+        "score": 0.3708
+      },
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "Przydatne Strony wydziałowe: Są to strony w domenie agh.edu.pl. Każdy Wydział ma własną stronę, na której mogą znajdować się informacje odnośnie praktyk, kół naukowych, wymian studenckich, współpracy z placówkami z zewnątrz czy też Wydziałowych Rad Samorządu Studentów (tzw. WRSS). Na niektórych Wydziałach obowiązują również zapisy na wizyty w dziekanacie, których dokonuje się właśnie poprzez stronę odpowiedniego Wydziału.  Dział Spraw Studenckich:  Ta strona może Cię zainteresować, jeśli zamierz...",
+        "score": 0.3708
+      },
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "stypendium rektora - przyznawane jest studentom o najwyższych średnich oraz wyróżniających się i posiadających osiągnięcia na tle naukowym, artystycznym         i sportowym stypendium dla osób niepełnosprawnych - stypendium przysługuje studentom o przyznanych orzeczeniach o niepełnosprawności od odpowiednich organów stypendium z Własnego funduszu na stypendia zapomoga - jest dodatkowym świadczeniem wypłacanym w przypadku trudnej sytuacji życiowej Poza tymi rodzajami świadczeń istnieją także inne...",
+        "score": 0.3979
+      }
+    ],
+    "context": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nPrzydatne\nStrony wydziałowe:\nSą to strony w domenie agh.edu.pl. Każdy Wydział ma własną stronę, na której mogą\nznajdować się informacje odnośnie praktyk, kół naukowych, wymian studenckich,\nwspółpracy z placówkami z zewnątrz czy też Wydziałowych Rad Samorządu\nStudentów (tzw. WRSS). Na niektórych Wydziałach obowiązują również zapisy na\nwizyty w dziekanacie, których dokonuje się właśnie poprzez stronę odpowiedniego\nWydziału. \nDział Spraw Studenckich: \nTa strona może Cię zainteresować, jeśli zamierzasz ubiegać się o stypendium czy\nzapomogę, bo znajdziesz tu wszystko co Ci będzie do tego potrzebne: terminy,\nwnioski oraz regulaminy świadczeń. Znajdziesz tu też odnośniki do strony Biura Osób\nNiepełnosprawnych, przeczytasz na temat pomocy psychologicznej na AGH oraz\nubezpieczeń.\nHELPI: \nPlatforma stworzona dla studentów ze szczególnymi potrzebami. Możesz przez nią\nzałatwić wszystkie sprawy formalne w Dziale Dostępności (DD) AGH np. złożyć\nwniosek o wsparcie, umówić konsultację z psychologiem lub z pracownikiem DD.\nHELPI pozwala być na bieżąco z załatwianymi sprawami – o zmianach statusu Twoich\nwniosków poinformuje cię mailowo.\n30\nJak się nie zgubić w gąszczu\ninformacji?\nWszystko na temat platform\n\n[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nPrzydatne\nStrony wydziałowe:\nSą to strony w domenie agh.edu.pl. Każdy Wydział ma własną stronę, na której mogą\nznajdować się informacje odnośnie praktyk, kół naukowych, wymian studenckich,\nwspółpracy z placówkami z zewnątrz czy też Wydziałowych Rad Samorządu\nStudentów (tzw. WRSS). Na niektórych Wydziałach obowiązują również zapisy na\nwizyty w dziekanacie, których dokonuje się właśnie poprzez stronę odpowiedniego\nWydziału. \nDział Spraw Studenckich: \nTa strona może Cię zainteresować, jeśli zamierzasz ubiegać się o stypendium czy\nzapomogę, bo znajdziesz tu wszystko co Ci będzie do tego potrzebne: terminy,\nwnioski oraz regulaminy świadczeń. Znajdziesz tu też odnośniki do strony Biura Osób\nNiepełnosprawnych, przeczytasz na temat pomocy psychologicznej na AGH oraz\nubezpieczeń.\nHELPI: \nPlatforma stworzona dla studentów ze szczególnymi potrzebami. Możesz przez nią\nzałatwić wszystkie sprawy formalne w Dziale Dostępności (DD) AGH np. złożyć\nwniosek o wsparcie, umówić konsultację z psychologiem lub z pracownikiem DD.\nHELPI pozwala być na bieżąco z załatwianymi sprawami – o zmianach statusu Twoich\nwniosków poinformuje cię mailowo.\n30\nJak się nie zgubić w gąszczu\ninformacji?\nWszystko na temat platform\n\n[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nstypendium rektora - przyznawane jest studentom o najwyższych średnich oraz\nwyróżniających się i posiadających osiągnięcia na tle naukowym, artystycznym \n       i sportowym\nstypendium dla osób niepełnosprawnych - stypendium przysługuje studentom\no przyznanych orzeczeniach o niepełnosprawności od odpowiednich organów\nstypendium z Własnego funduszu na stypendia\nzapomoga - jest dodatkowym świadczeniem wypłacanym w przypadku trudnej\nsytuacji życiowej\nPoza tymi rodzajami świadczeń istnieją także inne, jak np.stypendium ministra. \nWiększość stypendiów ma ustalane kwoty na początku roku akademickiego i z roku\nna rok mogą się od siebie różnić. \nNajwięcej informacji dotyczących świadczeń można uzyskać na stronie Działu Spraw\nStudenckich. \nJeśli chcielibyście starać się o przyznanie świadczenia sprawdźcie koniecznie tę\nstronę, ponieważ to właśnie na niej publikowane są harmonogramy składania\nwniosków. \nStypendia - dla kogo i za co?\n21\nDziekanat znajduje się w głównej siedzibie Twojego wydziału. O paniach z dziekanatu\nkrąży wiele historii mrożących krew w żyłach, ale spokojnie, są one tam po to, aby\nsłużyć Ci pomocą. W dziekanacie jesteś w stanie załatwić praktycznie każdą Twoją\nsprawę. \nAby Twoja wizyta w dziekanacie odbyła się szybko, bezboleśnie i zakończona była\nsukcesem przedstawiamy kilka porad jak skutecznie z niego korzystać: \nPamiętaj, żeby sprawdzić godziny otwarcia swojego dziekanatu. Każdy z nich ma\nswoje, indywidualne godziny przyjmowania studentów.",
+    "final_answer": "O stypendium socjalne na AGH mogą ubiegać się studenci, którzy znajdują się w trudnej sytuacji materialnej. Kryterium dochodowe oraz szczegółowe warunki formalne można znaleźć na stronie Działu Spraw Studenckich, gdzie publikowane są również harmonogramy składania wniosków.",
+    "latency_ms": 4675
+  },
+  "hybrid": {
+    "intent_raw": {
+      "kategorie": [
+        "ogolne"
+      ],
+      "kierunek": null,
+      "tryb": null,
+      "przedmiot": null,
+      "egzamin": null,
+      "kontekst": null
+    },
+    "intent": {
+      "kategorie": [
+        "ogolne"
+      ],
+      "kierunek": null,
+      "tryb": null,
+      "przedmiot": null,
+      "egzamin": null,
+      "kontekst": null
+    },
+    "graph_context": "",
+    "vector_context": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nPrzydatne\nStrony wydziałowe:\nSą to strony w domenie agh.edu.pl. Każdy Wydział ma własną stronę, na której mogą\nznajdować się informacje odnośnie praktyk, kół naukowych, wymian studenckich,\nwspółpracy z placówkami z zewnątrz czy też Wydziałowych Rad Samorządu\nStudentów (tzw. WRSS). Na niektórych Wydziałach obowiązują również zapisy na\nwizyty w dziekanacie, których dokonuje się właśnie poprzez stronę odpowiedniego\nWydziału. \nDział Spraw Studenckich: \nTa strona może Cię zainteresować, jeśli zamierzasz ubiegać się o stypendium czy\nzapomogę, bo znajdziesz tu wszystko co Ci będzie do tego potrzebne: terminy,\nwnioski oraz regulaminy świadczeń. Znajdziesz tu też odnośniki do strony Biura Osób\nNiepełnosprawnych, przeczytasz na temat pomocy psychologicznej na AGH oraz\nubezpieczeń.\nHELPI: \nPlatforma stworzona dla studentów ze szczególnymi potrzebami. Możesz przez nią\nzałatwić wszystkie sprawy formalne w Dziale Dostępności (DD) AGH np. złożyć\nwniosek o wsparcie, umówić konsultację z psychologiem lub z pracownikiem DD.\nHELPI pozwala być na bieżąco z załatwianymi sprawami – o zmianach statusu Twoich\nwniosków poinformuje cię mailowo.\n30\nJak się nie zgubić w gąszczu\ninformacji?\nWszystko na temat platform\n\n[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nPrzydatne\nStrony wydziałowe:\nSą to strony w domenie agh.edu.pl. Każdy Wydział ma własną stronę, na której mogą\nznajdować się informacje odnośnie praktyk, kół naukowych, wymian studenckich,\nwspółpracy z placówkami z zewnątrz czy też Wydziałowych Rad Samorządu\nStudentów (tzw. WRSS). Na niektórych Wydziałach obowiązują również zapisy na\nwizyty w dziekanacie, których dokonuje się właśnie poprzez stronę odpowiedniego\nWydziału. \nDział Spraw Studenckich: \nTa strona może Cię zainteresować, jeśli zamierzasz ubiegać się o stypendium czy\nzapomogę, bo znajdziesz tu wszystko co Ci będzie do tego potrzebne: terminy,\nwnioski oraz regulaminy świadczeń. Znajdziesz tu też odnośniki do strony Biura Osób\nNiepełnosprawnych, przeczytasz na temat pomocy psychologicznej na AGH oraz\nubezpieczeń.\nHELPI: \nPlatforma stworzona dla studentów ze szczególnymi potrzebami. Możesz przez nią\nzałatwić wszystkie sprawy formalne w Dziale Dostępności (DD) AGH np. złożyć\nwniosek o wsparcie, umówić konsultację z psychologiem lub z pracownikiem DD.\nHELPI pozwala być na bieżąco z załatwianymi sprawami – o zmianach statusu Twoich\nwniosków poinformuje cię mailowo.\n30\nJak się nie zgubić w gąszczu\ninformacji?\nWszystko na temat platform\n\n[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nstypendium rektora - przyznawane jest studentom o najwyższych średnich oraz\nwyróżniających się i posiadających osiągnięcia na tle naukowym, artystycznym \n       i sportowym\nstypendium dla osób niepełnosprawnych - stypendium przysługuje studentom\no przyznanych orzeczeniach o niepełnosprawności od odpowiednich organów\nstypendium z Własnego funduszu na stypendia\nzapomoga - jest dodatkowym świadczeniem wypłacanym w przypadku trudnej\nsytuacji życiowej\nPoza tymi rodzajami świadczeń istnieją także inne, jak np.stypendium ministra. \nWiększość stypendiów ma ustalane kwoty na początku roku akademickiego i z roku\nna rok mogą się od siebie różnić. \nNajwięcej informacji dotyczących świadczeń można uzyskać na stronie Działu Spraw\nStudenckich. \nJeśli chcielibyście starać się o przyznanie świadczenia sprawdźcie koniecznie tę\nstronę, ponieważ to właśnie na niej publikowane są harmonogramy składania\nwniosków. \nStypendia - dla kogo i za co?\n21\nDziekanat znajduje się w głównej siedzibie Twojego wydziału. O paniach z dziekanatu\nkrąży wiele historii mrożących krew w żyłach, ale spokojnie, są one tam po to, aby\nsłużyć Ci pomocą. W dziekanacie jesteś w stanie załatwić praktycznie każdą Twoją\nsprawę. \nAby Twoja wizyta w dziekanacie odbyła się szybko, bezboleśnie i zakończona była\nsukcesem przedstawiamy kilka porad jak skutecznie z niego korzystać: \nPamiętaj, żeby sprawdzić godziny otwarcia swojego dziekanatu. Każdy z nich ma\nswoje, indywidualne godziny przyjmowania studentów.",
+    "chunks": [
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "Przydatne Strony wydziałowe: Są to strony w domenie agh.edu.pl. Każdy Wydział ma własną stronę, na której mogą znajdować się informacje odnośnie praktyk, kół naukowych, wymian studenckich, współpracy z placówkami z zewnątrz czy też Wydziałowych Rad Samorządu Studentów (tzw. WRSS). Na niektórych Wydziałach obowiązują również zapisy na wizyty w dziekanacie, których dokonuje się właśnie poprzez stronę odpowiedniego Wydziału.  Dział Spraw Studenckich:  Ta strona może Cię zainteresować, jeśli zamierz...",
+        "score": 0.3708
+      },
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "Przydatne Strony wydziałowe: Są to strony w domenie agh.edu.pl. Każdy Wydział ma własną stronę, na której mogą znajdować się informacje odnośnie praktyk, kół naukowych, wymian studenckich, współpracy z placówkami z zewnątrz czy też Wydziałowych Rad Samorządu Studentów (tzw. WRSS). Na niektórych Wydziałach obowiązują również zapisy na wizyty w dziekanacie, których dokonuje się właśnie poprzez stronę odpowiedniego Wydziału.  Dział Spraw Studenckich:  Ta strona może Cię zainteresować, jeśli zamierz...",
+        "score": 0.3708
+      },
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "stypendium rektora - przyznawane jest studentom o najwyższych średnich oraz wyróżniających się i posiadających osiągnięcia na tle naukowym, artystycznym         i sportowym stypendium dla osób niepełnosprawnych - stypendium przysługuje studentom o przyznanych orzeczeniach o niepełnosprawności od odpowiednich organów stypendium z Własnego funduszu na stypendia zapomoga - jest dodatkowym świadczeniem wypłacanym w przypadku trudnej sytuacji życiowej Poza tymi rodzajami świadczeń istnieją także inne...",
+        "score": 0.3979
+      }
+    ],
+    "final_answer": "Nie posiadam wystarczających informacji na temat kryteriów dochodowych i warunków formalnych ubiegania się o stypendium socjalne na AGH. Zalecam odwiedzenie strony Działu Spraw Studenckich, gdzie można znaleźć szczegółowe informacje na ten temat.",
+    "latency_ms": 3147
+  },
+  "agentic": {
+    "stages": {
+      "guard": {
+        "safe": true,
+        "category": "safe",
+        "reason": "Pytanie dotyczy stypendium socjalnego na AGH, co jest związane z życiem na uczelni."
+      },
+      "intent": {
+        "raw": {
+          "kategorie": [
+            "ogolne"
+          ],
+          "kierunek": null,
+          "tryb": null,
+          "przedmiot": null,
+          "egzamin": null,
+          "kontekst": null
+        },
+        "normalized": {
+          "kategorie": [
+            "ogolne"
+          ],
+          "kierunek": null,
+          "tryb": null,
+          "przedmiot": null,
+          "egzamin": null,
+          "kontekst": null
+        }
+      },
+      "retrieve": {
+        "graph_count": 0,
+        "vector_count": 5,
+        "items_total": 5,
+        "items_preview": [
+          {
+            "id": "vector:pdf:0",
+            "source": "vector",
+            "content_preview": "Przydatne\nStrony wydziałowe:\nSą to strony w domenie agh.edu.pl. Każdy Wydział ma własną stronę, na której mogą\nznajdować się informacje odnośnie praktyk, kół naukowych, wymian studenckich,\nwspółpracy "
+          },
+          {
+            "id": "vector:pdf:1",
+            "source": "vector",
+            "content_preview": "Przydatne\nStrony wydziałowe:\nSą to strony w domenie agh.edu.pl. Każdy Wydział ma własną stronę, na której mogą\nznajdować się informacje odnośnie praktyk, kół naukowych, wymian studenckich,\nwspółpracy "
+          },
+          {
+            "id": "vector:pdf:2",
+            "source": "vector",
+            "content_preview": "stypendium rektora - przyznawane jest studentom o najwyższych średnich oraz\nwyróżniających się i posiadających osiągnięcia na tle naukowym, artystycznym \n       i sportowym\nstypendium dla osób niepełn"
+          },
+          {
+            "id": "vector:pdf:3",
+            "source": "vector",
+            "content_preview": "stypendium rektora - przyznawane jest studentom o najwyższych średnich oraz\nwyróżniających się i posiadających osiągnięcia na tle naukowym, artystycznym \n       i sportowym\nstypendium dla osób niepełn"
+          },
+          {
+            "id": "vector:pdf:4",
+            "source": "vector",
+            "content_preview": "Załącznik nr 1 do zarządzenia nr 48/2025 Rektora AGH z dnia 1 września 2025 r. \n  \nStrona 22 z 23  \n5. Zmiana kierunku studiów, na którym zostało przyznane stypendium rektora w trakcie roku \nakademick"
+          }
+        ]
+      },
+      "filter": {
+        "summary": {
+          "keep": 0,
+          "reject": 5
+        },
+        "decisions": [
+          {
+            "id": "vector:pdf:0",
+            "verdict": "reject",
+            "reason": "Fragment nie zawiera informacji o stypendium socjalnym ani kryteriów dochodowych."
+          },
+          {
+            "id": "vector:pdf:1",
+            "verdict": "reject",
+            "reason": "Fragment nie zawiera informacji o stypendium socjalnym ani kryteriów dochodowych."
+          },
+          {
+            "id": "vector:pdf:2",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy innych rodzajów stypendiów, nie socjalnego."
+          },
+          {
+            "id": "vector:pdf:3",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy innych rodzajów stypendiów, nie socjalnego."
+          },
+          {
+            "id": "vector:pdf:4",
+            "verdict": "reject",
+            "reason": "Fragment nie zawiera informacji o stypendium socjalnym ani kryteriów dochodowych."
+          }
+        ]
+      },
+      "final": {
+        "text": "Nie znalazłem wystarczających danych w bazie wiedzy, aby odpowiedzieć na to pytanie. Brak pasujących fragmentów w bazie wiedzy.",
+        "via": "filter_empty"
+      }
+    },
+    "agent_trace": [
+      "guard -> safe",
+      "intent -> ['ogolne']",
+      "retrieve -> 0 graph + 5 vector",
+      "filter -> keep=0 reject=5",
+      "clarify"
+    ],
+    "final_answer": "Nie znalazłem wystarczających danych w bazie wiedzy, aby odpowiedzieć na to pytanie. Brak pasujących fragmentów w bazie wiedzy.",
+    "blocked": false,
+    "latency_ms": 4872
+  }
+}

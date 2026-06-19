@@ -13,10 +13,16 @@ copy .env.example .env   # uzupełnij OPENROUTER_API_KEY i NEO4J_PASSWORD
 ollama pull nomic-embed-text
 python ingest_hybrid.py    # załaduje CSV + PDF z data/ do Neo4j i Chroma (./db)
 
-python test.py             # demo: vector-only vs baseline hybrid vs agentic
-python test.py --index 0   # jedno pytanie z listy przykładowej
+python test.py             # demo: vector vs hybrid vs agentic
+python test.py --index 0   # jedno pytanie z evaluation/questions.json
 python test.py --question "Jaki jest próg na Elektronikę stacjonarną?"
+
+python evaluation/run_compare.py              # side-by-side: edytuj evaluation/questions.json
+python evaluation/run_compare.py --id progi_001 # jedno pytanie
+python evaluation/run_compare.py --dry-run    # lista pytań bez API
 ```
+
+Wyniki compare: `evaluation/results/compare/report.md` i `traces/{id}.json`.
 
 `db/` nie jest w repozytorium — po `ingest_hybrid.py` powstaje lokalnie w `./db`. Bez Neo4j, Ollama lub ingestu demo nie zadziała.
 

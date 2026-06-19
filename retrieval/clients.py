@@ -10,7 +10,7 @@ load_dotenv()
 
 model = ChatOpenAI(
     temperature=0,
-    model=os.getenv("LLM_MODEL", "meta-llama/llama-3.3-70b-instruct"),
+    model=os.getenv("LLM_MODEL", "openai/gpt-4o-mini"),
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
 )

@@ -1,15 +1,14 @@
 """
 Demo: porównanie 3 podejść RAG na liście przykładowych pytań.
 
-1. Vector-only  — retrieval PDF (Chroma) + LLM
-2. Baseline hybrid — graf Neo4j + wektor, bez agentów
-3. Agentic — LangGraph z guard / filter / fact-check (+ trace)
+1. Vector-only  — Chroma PDF + LLM (baseline_vector)
+2. Hybrid GraphRAG — Neo4j + wektor (baseline_hybrid)
+3. Agentic — LangGraph z guard / filter / fact-check
 """
 
 import argparse
 import json
 import sys
-import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -21,80 +20,33 @@ if hasattr(sys.stdout, "reconfigure"):
     except Exception:
         pass
 
-from langchain_core.prompts import ChatPromptTemplate
-
 from agents.graph import run as agentic_run
-from pipelines.baseline_hybrid import generate_answer as baseline_answer
-from retrieval.clients import model
-from retrieval.vector_retriever import retrieve_from_vector
+from agents.stages import build_agentic_stages
+from pipelines.baseline_hybrid import generate_answer as hybrid_answer
+from pipelines.baseline_vector import generate_answer as vector_answer
 
-SAMPLE_QUESTIONS_PATH = ROOT / "examples" / "sample_questions.json"
-
-VECTOR_PROMPT = ChatPromptTemplate.from_template("""
-Jesteś inteligentnym asystentem uczelnianym. Odpowiadaj rzeczowo i zwięźle, \
-wyłącznie na podstawie dostarczonego kontekstu z dokumentów PDF.
-Jeśli kontekst nie zawiera wystarczających informacji, poinformuj o tym użytkownika.
-
-Pytanie: {question}
-
-=== KONTEKST Z DOKUMENTÓW PDF ===
-{vector_context}
-
-ODPOWIEDŹ:
-""")
+QUESTIONS_PATH = ROOT / "evaluation" / "questions.json"
 
 
-def load_sample_questions() -> list[dict]:
-    return json.loads(SAMPLE_QUESTIONS_PATH.read_text(encoding="utf-8"))
+def load_questions() -> list[dict]:
+    return json.loads(QUESTIONS_PATH.read_text(encoding="utf-8"))
 
 
-def run_vector_only(question: str) -> tuple[str, int]:
-    t0 = time.perf_counter()
-    vector_context, _ = retrieve_from_vector(question)
-    chain = VECTOR_PROMPT | model
-    response = chain.invoke({
-        "question": question,
-        "vector_context": vector_context or "Brak pasujących dokumentów.",
-    })
-    latency_ms = int((time.perf_counter() - t0) * 1000)
-    return response.content, latency_ms
-
-
-def run_baseline(question: str) -> tuple[str, int]:
-    t0 = time.perf_counter()
-    answer = baseline_answer(question, verbose=False)
-    latency_ms = int((time.perf_counter() - t0) * 1000)
-    return answer, latency_ms
-
-
-def run_agentic(question: str) -> tuple[dict, int]:
-    t0 = time.perf_counter()
-    result = agentic_run(question, verbose=True)
-    latency_ms = int((time.perf_counter() - t0) * 1000)
-    result["latency_ms"] = latency_ms
-    return result, latency_ms
-
-
-def print_agentic_details(result: dict) -> None:
-    if result.get("blocked"):
-        guard = result.get("guard_decision", {})
-        print(f"[Blocked] category={guard.get('category')} reason={guard.get('reason')}")
+def print_agentic_stages(result: dict) -> None:
+    stages = build_agentic_stages(result)
+    for name, data in stages.items():
+        if name == "answer" and isinstance(data, dict):
+            print(f"\n[{name}] draft: {data.get('draft_answer', '')[:300]}...")
+        elif name == "final" and isinstance(data, dict):
+            print(f"\n[{name}] via={data.get('via')}: {data.get('text', '')}")
+        elif name == "filter" and isinstance(data, dict):
+            s = data.get("summary", {})
+            print(f"\n[{name}] keep={s.get('keep')} reject={s.get('reject')}")
+        else:
+            print(f"\n[{name}] {data}")
 
     for step in result.get("agent_trace", []):
         print(f"  -> {step}")
-
-    if result.get("filter_decisions"):
-        keep = sum(1 for d in result["filter_decisions"] if d.get("verdict") == "keep")
-        reject = len(result["filter_decisions"]) - keep
-        print(f"\n[Filter] keep={keep} reject={reject}")
-
-    verification = result.get("answer_verification", {})
-    if verification:
-        print(f"[Fact check] grounded={verification.get('grounded')}")
-        if verification.get("issues"):
-            print(f"  issues: {verification['issues']}")
-
-    print(f"\nODPOWIEDŹ: {result.get('final_answer', '')}")
 
 
 def run_question(question: str, index: int | None = None, total: int | None = None) -> None:
@@ -103,36 +55,31 @@ def run_question(question: str, index: int | None = None, total: int | None = No
     print(header)
     print("=" * 70)
 
-    print("\n--- Vector-only ---")
+    print("\n--- Vector ---")
     try:
-        answer, ms = run_vector_only(question)
-        print(f"({ms} ms)\n{answer}")
+        print(vector_answer(question, verbose=False))
     except Exception as e:
         print(f"BŁĄD: {e}")
 
-    print("\n--- Baseline hybrid ---")
+    print("\n--- Hybrid ---")
     try:
-        answer, ms = run_baseline(question)
-        print(f"({ms} ms)\n{answer}")
+        print(hybrid_answer(question, verbose=False))
     except Exception as e:
         print(f"BŁĄD: {e}")
 
     print("\n--- Agentic ---")
     try:
-        result, ms = run_agentic(question)
-        print(f"({ms} ms)")
-        print_agentic_details(result)
+        result = agentic_run(question, verbose=False)
+        print_agentic_stages(result)
     except Exception as e:
         print(f"BŁĄD: {e}")
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Demo: vector-only vs baseline hybrid vs agentic"
-    )
-    parser.add_argument("--index", type=int, help="Indeks pytania z examples/sample_questions.json (0-based)")
-    parser.add_argument("--question", help="Własne pytanie (zamiast listy)")
-    parser.add_argument("--skip-preflight", action="store_true", help="Pomiń diagnostykę środowiska")
+    parser = argparse.ArgumentParser(description="Demo: vector vs hybrid vs agentic")
+    parser.add_argument("--index", type=int, help="Indeks pytania z evaluation/questions.json (0-based)")
+    parser.add_argument("--question", help="Własne pytanie")
+    parser.add_argument("--skip-preflight", action="store_true")
     args = parser.parse_args()
 
     if not args.skip_preflight:
@@ -150,7 +97,7 @@ def main():
         run_question(args.question)
         return
 
-    samples = load_sample_questions()
+    samples = load_questions()
     if args.index is not None:
         if args.index < 0 or args.index >= len(samples):
             parser.error(f"--index musi być 0..{len(samples) - 1}")

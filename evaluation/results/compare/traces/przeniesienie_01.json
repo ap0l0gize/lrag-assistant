@@ -1,0 +1,216 @@
+{
+  "id": "przeniesienie_01",
+  "question": "Jeśli dostałem się na Budownictwo stacjonarne, ale po 1 semestrze uznam, że to błąd i chcę przenieść się na Inżynierię Materiałową (ile na tym kierunku było osób na jedno miejsce?), to czy Regulamin Studiów AGH pozwala na takie przeniesienie i co muszę zrobić?",
+  "side_by_side": {
+    "vector": {
+      "final_answer": "Nie znalazłem informacji na temat przeniesienia się na Inżynierię Materiałową w Regulaminie Studiów AGH ani liczby osób na jedno miejsce na tym kierunku. Proszę skontaktować się z dziekanatem lub sprawdzić regulamin bezpośrednio.",
+      "latency_ms": 1809
+    },
+    "hybrid": {
+      "final_answer": "Regulamin Studiów AGH zazwyczaj umożliwia przeniesienie się na inny kierunek, jednak szczegółowe zasady mogą się różnić. W przypadku Inżynierii Materiałowej, na 176 miejsc było 60 osób na jedno miejsce. Aby przenieść się na ten kierunek, powinieneś skontaktować się z dziekanatem lub odpowiednim biurem obsługi studenta, aby uzyskać szczegółowe informacje na temat procedury przeniesienia oraz wymaganych dokumentów.",
+      "latency_ms": 3770
+    },
+    "agentic": {
+      "final_answer": "Regulamin Studiów AGH pozwala na przeniesienie między kierunkami, jednak szczegółowe zasady mogą się różnić. W przypadku Inżynierii Materiałowej, na jedno miejsce przypadało 2,93 osoby (176 miejsc na 60 kandydatów). Aby przenieść się na ten kierunek, powinieneś skontaktować się z dziekanatem oraz zapoznać się z wymaganiami dotyczącymi przeniesień, które mogą obejmować m.in. złożenie odpowiednich dokumentów oraz spełnienie określonych kryteriów.",
+      "latency_ms": 10228
+    }
+  },
+  "vector": {
+    "chunks": [
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "studenta Nie możesz zasnąć, a widmo nieuchronnie zbliżającego się zaliczenia spędza Ci sen  z powiek? Nie wiesz ile razy będziesz mógł/mogła przystąpić do egzaminu? A co jeśli prowadzący przeczyta wszystkim Twoje odpowiedzi, po czym każe Ci zrobić fikołka na środku sali? Jakie chwyty są dozwolone w grze zwanej “studiowaniem”?   Odpowiedziami na te pytania nie będziesz musiał(a) się przejmować jeśli weźmiesz udział w szkoleniu z Praw i Obowiązków studenta, które jest dedykowane specjalnie dla stu...",
+        "score": 0.4087
+      },
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "studenta Nie możesz zasnąć, a widmo nieuchronnie zbliżającego się zaliczenia spędza Ci sen  z powiek? Nie wiesz ile razy będziesz mógł/mogła przystąpić do egzaminu? A co jeśli prowadzący przeczyta wszystkim Twoje odpowiedzi, po czym każe Ci zrobić fikołka na środku sali? Jakie chwyty są dozwolone w grze zwanej “studiowaniem”?   Odpowiedziami na te pytania nie będziesz musiał(a) się przejmować jeśli weźmiesz udział w szkoleniu z Praw i Obowiązków studenta, które jest dedykowane specjalnie dla stu...",
+        "score": 0.4087
+      },
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "obowiązkiem studenta zapisanym w Regulaminie Studiów.  Absolutnie niezbędne! USOS:  Na tej stronie jest zawarte praktycznie wszystko, co jest związane z przebiegiem Twoich studiów. Jesteś w stanie tutaj sprawdzić m.in. plan zajęć, swoje oceny semestralne, oferty wymian studenckich, przyznane Ci stypendia czy też na jakie przedmioty i grupy zajęciowe jesteś aktualnie zapisany/zapisana. Przez USOS również należy zapisywać się na grupy z WF, przedmioty obieralne oraz dodatkowe przedmioty należące d...",
+        "score": 0.4249
+      }
+    ],
+    "context": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nstudenta\nNie możesz zasnąć, a widmo nieuchronnie zbliżającego się zaliczenia spędza Ci sen \nz powiek? Nie wiesz ile razy będziesz mógł/mogła przystąpić do egzaminu? A co jeśli\nprowadzący przeczyta wszystkim Twoje odpowiedzi, po czym każe Ci zrobić fikołka\nna środku sali? Jakie chwyty są dozwolone w grze zwanej “studiowaniem”?  \nOdpowiedziami na te pytania nie będziesz musiał(a) się przejmować jeśli weźmiesz\nudział w szkoleniu z Praw i Obowiązków studenta, które jest dedykowane specjalnie\ndla studentów pierwszego roku. Podczas szkolenia studenci wyższych lat podzielą się\nswoimi doświadczeniami oraz wiedzą regulaminową obowiązującą na Naszej Alma\nMater. Zwrócą uwagę na najważniejsze aspekty regulaminów i odpowiedzą na każde,\nnawet najtrudniejsze pytania.\n13\nInformacji o tym gdzie i kiedy odbędą się Szkolenia z Praw\ni Obowiązków Studenta oczekujcie na początku roku akademickiego. \n“Myślałem, że mogę zdawać\nsesję w nieskończoność -\npotem poszedłem na\nszkolenie z praw i\nobowiązków studenta”. \n“Odkąd wzięłam udział\nw szkoleniu z praw i obowiązków\nstudenta, żaden ustęp\nregulaminowy mnie nie\nzaskoczył”\n“To szkolenie\nodmieniło moje\nżycie”\nO co zapytać na pierwszych zajęciach \nPoczątek semestru często bywa chaotyczny. Czasem zmieniają się terminy zajęć,\npodział na grupy, miejsce. Niektórzy prowadzący od razu przechodzą do nauki,\nniektórzy przedstawiają tylko formę zaliczeń. Co powinieneś/powinnaś wiedzieć po\npierwszych zajęciach? Przede wszystkim ile przysługuje Ci nieobecności\n\n[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nstudenta\nNie możesz zasnąć, a widmo nieuchronnie zbliżającego się zaliczenia spędza Ci sen \nz powiek? Nie wiesz ile razy będziesz mógł/mogła przystąpić do egzaminu? A co jeśli\nprowadzący przeczyta wszystkim Twoje odpowiedzi, po czym każe Ci zrobić fikołka\nna środku sali? Jakie chwyty są dozwolone w grze zwanej “studiowaniem”?  \nOdpowiedziami na te pytania nie będziesz musiał(a) się przejmować jeśli weźmiesz\nudział w szkoleniu z Praw i Obowiązków studenta, które jest dedykowane specjalnie\ndla studentów pierwszego roku. Podczas szkolenia studenci wyższych lat podzielą się\nswoimi doświadczeniami oraz wiedzą regulaminową obowiązującą na Naszej Alma\nMater. Zwrócą uwagę na najważniejsze aspekty regulaminów i odpowiedzą na każde,\nnawet najtrudniejsze pytania.\n13\nInformacji o tym gdzie i kiedy odbędą się Szkolenia z Praw\ni Obowiązków Studenta oczekujcie na początku roku akademickiego. \n“Myślałem, że mogę zdawać\nsesję w nieskończoność -\npotem poszedłem na\nszkolenie z praw i\nobowiązków studenta”. \n“Odkąd wzięłam udział\nw szkoleniu z praw i obowiązków\nstudenta, żaden ustęp\nregulaminowy mnie nie\nzaskoczył”\n“To szkolenie\nodmieniło moje\nżycie”\nO co zapytać na pierwszych zajęciach \nPoczątek semestru często bywa chaotyczny. Czasem zmieniają się terminy zajęć,\npodział na grupy, miejsce. Niektórzy prowadzący od razu przechodzą do nauki,\nniektórzy przedstawiają tylko formę zaliczeń. Co powinieneś/powinnaś wiedzieć po\npierwszych zajęciach? Przede wszystkim ile przysługuje Ci nieobecności\n\n[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nobowiązkiem studenta zapisanym w Regulaminie Studiów. \nAbsolutnie niezbędne!\nUSOS: \nNa tej stronie jest zawarte praktycznie wszystko, co jest związane z przebiegiem\nTwoich studiów. Jesteś w stanie tutaj sprawdzić m.in. plan zajęć, swoje oceny\nsemestralne, oferty wymian studenckich, przyznane Ci stypendia czy też na jakie\nprzedmioty i grupy zajęciowe jesteś aktualnie zapisany/zapisana. Przez USOS również\nnależy zapisywać się na grupy z WF, przedmioty obieralne oraz dodatkowe\nprzedmioty należące do tzw. Bloku Innowacyjnego. Kiedy po raz pierwszy wchodzisz\nna USOS możesz czuć się wręcz przytłoczony/przytłoczona ilością zakładek, \nale spokojnie wszystko wejdzie w nawyk. \nUniTime: \nJest to jedna z tych stron, którą, w zależności od Wydziału, na jakim jesteś, będziesz\nużytkować codziennie lub wcale. Została ona stworzona stricte do sprawdzania oraz\newentualnie układania Twojego osobistego planu zajęć. Aby zobaczyć swój plan zajęć,\nnależy:\nzalogować się1.\nwejść w Osobisty harmonogram w pasku na samej górze2.\nwybrać odpowiedni semestr3.\nkliknąć \"szukaj\"4.\npo prawej stronie wybrać odpowiedni tydzień lub zobaczyć plan na cały semestr\nwybierając “Wszystkie pasujące tygodnie”\n5.\nPodczas sprawdzania planu na środku strony widoczne są zakładki “Harmonogram\ngraficzny”, “Lista rezerwacji” oraz “Szczegółowa lista rezerwacji”. Zakładki pozwalają na\nzobaczenie planu zajęć w różnych formach graficznych. Dodatkowo możesz \nw “Wyszukaj osobę” zobaczyć plany prowadzących.\n27",
+    "final_answer": "Nie znalazłem informacji na temat przeniesienia się na Inżynierię Materiałową w Regulaminie Studiów AGH ani liczby osób na jedno miejsce na tym kierunku. Proszę skontaktować się z dziekanatem lub sprawdzić regulamin bezpośrednio.",
+    "latency_ms": 1809
+  },
+  "hybrid": {
+    "intent_raw": {
+      "kategorie": [
+        "progi",
+        "ogolne"
+      ],
+      "kierunek": "Inżynieria Materiałowa",
+      "tryb": "Stacjonarne",
+      "przedmiot": null,
+      "egzamin": null,
+      "kontekst": null
+    },
+    "intent": {
+      "kategorie": [
+        "progi",
+        "ogolne"
+      ],
+      "kierunek": "Inżynieria Materiałowa",
+      "tryb": "Stacjonarne",
+      "przedmiot": null,
+      "egzamin": null,
+      "kontekst": null
+    },
+    "graph_context": "[GRAPH — PROGI]\n  kierunek: Inżynieria Materiałowa | tryb: Stacjonarne | prog_min: 470 | prog_max: 870 | miejsca: 176/60",
+    "vector_context": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nstudenta\nNie możesz zasnąć, a widmo nieuchronnie zbliżającego się zaliczenia spędza Ci sen \nz powiek? Nie wiesz ile razy będziesz mógł/mogła przystąpić do egzaminu? A co jeśli\nprowadzący przeczyta wszystkim Twoje odpowiedzi, po czym każe Ci zrobić fikołka\nna środku sali? Jakie chwyty są dozwolone w grze zwanej “studiowaniem”?  \nOdpowiedziami na te pytania nie będziesz musiał(a) się przejmować jeśli weźmiesz\nudział w szkoleniu z Praw i Obowiązków studenta, które jest dedykowane specjalnie\ndla studentów pierwszego roku. Podczas szkolenia studenci wyższych lat podzielą się\nswoimi doświadczeniami oraz wiedzą regulaminową obowiązującą na Naszej Alma\nMater. Zwrócą uwagę na najważniejsze aspekty regulaminów i odpowiedzą na każde,\nnawet najtrudniejsze pytania.\n13\nInformacji o tym gdzie i kiedy odbędą się Szkolenia z Praw\ni Obowiązków Studenta oczekujcie na początku roku akademickiego. \n“Myślałem, że mogę zdawać\nsesję w nieskończoność -\npotem poszedłem na\nszkolenie z praw i\nobowiązków studenta”. \n“Odkąd wzięłam udział\nw szkoleniu z praw i obowiązków\nstudenta, żaden ustęp\nregulaminowy mnie nie\nzaskoczył”\n“To szkolenie\nodmieniło moje\nżycie”\nO co zapytać na pierwszych zajęciach \nPoczątek semestru często bywa chaotyczny. Czasem zmieniają się terminy zajęć,\npodział na grupy, miejsce. Niektórzy prowadzący od razu przechodzą do nauki,\nniektórzy przedstawiają tylko formę zaliczeń. Co powinieneś/powinnaś wiedzieć po\npierwszych zajęciach? Przede wszystkim ile przysługuje Ci nieobecności\n\n[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nstudenta\nNie możesz zasnąć, a widmo nieuchronnie zbliżającego się zaliczenia spędza Ci sen \nz powiek? Nie wiesz ile razy będziesz mógł/mogła przystąpić do egzaminu? A co jeśli\nprowadzący przeczyta wszystkim Twoje odpowiedzi, po czym każe Ci zrobić fikołka\nna środku sali? Jakie chwyty są dozwolone w grze zwanej “studiowaniem”?  \nOdpowiedziami na te pytania nie będziesz musiał(a) się przejmować jeśli weźmiesz\nudział w szkoleniu z Praw i Obowiązków studenta, które jest dedykowane specjalnie\ndla studentów pierwszego roku. Podczas szkolenia studenci wyższych lat podzielą się\nswoimi doświadczeniami oraz wiedzą regulaminową obowiązującą na Naszej Alma\nMater. Zwrócą uwagę na najważniejsze aspekty regulaminów i odpowiedzą na każde,\nnawet najtrudniejsze pytania.\n13\nInformacji o tym gdzie i kiedy odbędą się Szkolenia z Praw\ni Obowiązków Studenta oczekujcie na początku roku akademickiego. \n“Myślałem, że mogę zdawać\nsesję w nieskończoność -\npotem poszedłem na\nszkolenie z praw i\nobowiązków studenta”. \n“Odkąd wzięłam udział\nw szkoleniu z praw i obowiązków\nstudenta, żaden ustęp\nregulaminowy mnie nie\nzaskoczył”\n“To szkolenie\nodmieniło moje\nżycie”\nO co zapytać na pierwszych zajęciach \nPoczątek semestru często bywa chaotyczny. Czasem zmieniają się terminy zajęć,\npodział na grupy, miejsce. Niektórzy prowadzący od razu przechodzą do nauki,\nniektórzy przedstawiają tylko formę zaliczeń. Co powinieneś/powinnaś wiedzieć po\npierwszych zajęciach? Przede wszystkim ile przysługuje Ci nieobecności\n\n[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nobowiązkiem studenta zapisanym w Regulaminie Studiów. \nAbsolutnie niezbędne!\nUSOS: \nNa tej stronie jest zawarte praktycznie wszystko, co jest związane z przebiegiem\nTwoich studiów. Jesteś w stanie tutaj sprawdzić m.in. plan zajęć, swoje oceny\nsemestralne, oferty wymian studenckich, przyznane Ci stypendia czy też na jakie\nprzedmioty i grupy zajęciowe jesteś aktualnie zapisany/zapisana. Przez USOS również\nnależy zapisywać się na grupy z WF, przedmioty obieralne oraz dodatkowe\nprzedmioty należące do tzw. Bloku Innowacyjnego. Kiedy po raz pierwszy wchodzisz\nna USOS możesz czuć się wręcz przytłoczony/przytłoczona ilością zakładek, \nale spokojnie wszystko wejdzie w nawyk. \nUniTime: \nJest to jedna z tych stron, którą, w zależności od Wydziału, na jakim jesteś, będziesz\nużytkować codziennie lub wcale. Została ona stworzona stricte do sprawdzania oraz\newentualnie układania Twojego osobistego planu zajęć. Aby zobaczyć swój plan zajęć,\nnależy:\nzalogować się1.\nwejść w Osobisty harmonogram w pasku na samej górze2.\nwybrać odpowiedni semestr3.\nkliknąć \"szukaj\"4.\npo prawej stronie wybrać odpowiedni tydzień lub zobaczyć plan na cały semestr\nwybierając “Wszystkie pasujące tygodnie”\n5.\nPodczas sprawdzania planu na środku strony widoczne są zakładki “Harmonogram\ngraficzny”, “Lista rezerwacji” oraz “Szczegółowa lista rezerwacji”. Zakładki pozwalają na\nzobaczenie planu zajęć w różnych formach graficznych. Dodatkowo możesz \nw “Wyszukaj osobę” zobaczyć plany prowadzących.\n27",
+    "chunks": [
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "studenta Nie możesz zasnąć, a widmo nieuchronnie zbliżającego się zaliczenia spędza Ci sen  z powiek? Nie wiesz ile razy będziesz mógł/mogła przystąpić do egzaminu? A co jeśli prowadzący przeczyta wszystkim Twoje odpowiedzi, po czym każe Ci zrobić fikołka na środku sali? Jakie chwyty są dozwolone w grze zwanej “studiowaniem”?   Odpowiedziami na te pytania nie będziesz musiał(a) się przejmować jeśli weźmiesz udział w szkoleniu z Praw i Obowiązków studenta, które jest dedykowane specjalnie dla stu...",
+        "score": 0.4087
+      },
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "studenta Nie możesz zasnąć, a widmo nieuchronnie zbliżającego się zaliczenia spędza Ci sen  z powiek? Nie wiesz ile razy będziesz mógł/mogła przystąpić do egzaminu? A co jeśli prowadzący przeczyta wszystkim Twoje odpowiedzi, po czym każe Ci zrobić fikołka na środku sali? Jakie chwyty są dozwolone w grze zwanej “studiowaniem”?   Odpowiedziami na te pytania nie będziesz musiał(a) się przejmować jeśli weźmiesz udział w szkoleniu z Praw i Obowiązków studenta, które jest dedykowane specjalnie dla stu...",
+        "score": 0.4087
+      },
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "obowiązkiem studenta zapisanym w Regulaminie Studiów.  Absolutnie niezbędne! USOS:  Na tej stronie jest zawarte praktycznie wszystko, co jest związane z przebiegiem Twoich studiów. Jesteś w stanie tutaj sprawdzić m.in. plan zajęć, swoje oceny semestralne, oferty wymian studenckich, przyznane Ci stypendia czy też na jakie przedmioty i grupy zajęciowe jesteś aktualnie zapisany/zapisana. Przez USOS również należy zapisywać się na grupy z WF, przedmioty obieralne oraz dodatkowe przedmioty należące d...",
+        "score": 0.4249
+      }
+    ],
+    "final_answer": "Regulamin Studiów AGH zazwyczaj umożliwia przeniesienie się na inny kierunek, jednak szczegółowe zasady mogą się różnić. W przypadku Inżynierii Materiałowej, na 176 miejsc było 60 osób na jedno miejsce. Aby przenieść się na ten kierunek, powinieneś skontaktować się z dziekanatem lub odpowiednim biurem obsługi studenta, aby uzyskać szczegółowe informacje na temat procedury przeniesienia oraz wymaganych dokumentów.",
+    "latency_ms": 3770
+  },
+  "agentic": {
+    "stages": {
+      "guard": {
+        "safe": true,
+        "category": "safe",
+        "reason": "Pytanie dotyczy przeniesienia między kierunkami studiów na AGH oraz regulaminu studiów, co jest związane z życiem na uczelni."
+      },
+      "intent": {
+        "raw": {
+          "kategorie": [
+            "progi",
+            "ogolne"
+          ],
+          "kierunek": "Inżynieria Materiałowa",
+          "tryb": "Stacjonarne",
+          "przedmiot": null,
+          "egzamin": null,
+          "kontekst": null
+        },
+        "normalized": {
+          "kategorie": [
+            "progi",
+            "ogolne"
+          ],
+          "kierunek": "Inżynieria Materiałowa",
+          "tryb": "Stacjonarne",
+          "przedmiot": null,
+          "egzamin": null,
+          "kontekst": null
+        }
+      },
+      "retrieve": {
+        "graph_count": 1,
+        "vector_count": 5,
+        "items_total": 6,
+        "items_preview": [
+          {
+            "id": "graph:progi:0",
+            "source": "graph",
+            "content_preview": "kierunek: Inżynieria Materiałowa | tryb: Stacjonarne | prog_min: 470 | prog_max: 870 | miejsca: 176/60"
+          },
+          {
+            "id": "vector:pdf:0",
+            "source": "vector",
+            "content_preview": "studenta\nNie możesz zasnąć, a widmo nieuchronnie zbliżającego się zaliczenia spędza Ci sen \nz powiek? Nie wiesz ile razy będziesz mógł/mogła przystąpić do egzaminu? A co jeśli\nprowadzący przeczyta wsz"
+          },
+          {
+            "id": "vector:pdf:1",
+            "source": "vector",
+            "content_preview": "studenta\nNie możesz zasnąć, a widmo nieuchronnie zbliżającego się zaliczenia spędza Ci sen \nz powiek? Nie wiesz ile razy będziesz mógł/mogła przystąpić do egzaminu? A co jeśli\nprowadzący przeczyta wsz"
+          },
+          {
+            "id": "vector:pdf:2",
+            "source": "vector",
+            "content_preview": "obowiązkiem studenta zapisanym w Regulaminie Studiów. \nAbsolutnie niezbędne!\nUSOS: \nNa tej stronie jest zawarte praktycznie wszystko, co jest związane z przebiegiem\nTwoich studiów. Jesteś w stanie tut"
+          },
+          {
+            "id": "vector:pdf:3",
+            "source": "vector",
+            "content_preview": "obowiązkiem studenta zapisanym w Regulaminie Studiów. \nAbsolutnie niezbędne!\nUSOS: \nNa tej stronie jest zawarte praktycznie wszystko, co jest związane z przebiegiem\nTwoich studiów. Jesteś w stanie tut"
+          },
+          {
+            "id": "vector:pdf:4",
+            "source": "vector",
+            "content_preview": "potoczne nazewnictwo dla\nkażdego urlopu. \n19\n\"Jestem na urlopie\"\n-wysłano z iPhone'a\nAnkietyzacja\nProwadzący bywają różni. Niektórych zapamiętuje się na całe życie jako swojego\nrodzaju autorytet, inni"
+          }
+        ]
+      },
+      "filter": {
+        "summary": {
+          "keep": 1,
+          "reject": 5
+        },
+        "decisions": [
+          {
+            "id": "graph:progi:0",
+            "verdict": "keep",
+            "reason": "Informacja o liczbie miejsc na kierunku Inżynieria Materiałowa jest istotna dla użytkownika, który pyta o to, ile osób było na jedno miejsce."
+          },
+          {
+            "id": "vector:pdf:0",
+            "verdict": "reject",
+            "reason": "Fragment nie zawiera informacji dotyczących przeniesienia na inny kierunek ani regulaminu studiów."
+          },
+          {
+            "id": "vector:pdf:1",
+            "verdict": "reject",
+            "reason": "Fragment nie zawiera informacji dotyczących przeniesienia na inny kierunek ani regulaminu studiów."
+          },
+          {
+            "id": "vector:pdf:2",
+            "verdict": "reject",
+            "reason": "Fragment nie zawiera konkretnych informacji na temat przeniesienia ani regulaminu studiów."
+          },
+          {
+            "id": "vector:pdf:3",
+            "verdict": "reject",
+            "reason": "Fragment nie zawiera konkretnych informacji na temat przeniesienia ani regulaminu studiów."
+          },
+          {
+            "id": "vector:pdf:4",
+            "verdict": "reject",
+            "reason": "Fragment nie zawiera informacji dotyczących przeniesienia na inny kierunek ani regulaminu studiów."
+          }
+        ]
+      },
+      "answer": {
+        "draft_answer": "Regulamin Studiów AGH pozwala na przeniesienie między kierunkami, jednak szczegółowe zasady mogą się różnić. W przypadku Inżynierii Materiałowej, na jedno miejsce przypadało 2,93 osoby (176 miejsc na 60 kandydatów). Aby przenieść się na ten kierunek, powinieneś skontaktować się z dziekanatem oraz zapoznać się z wymaganiami dotyczącymi przeniesień, które mogą obejmować m.in. złożenie odpowiednich dokumentów oraz spełnienie określonych kryteriów."
+      },
+      "fact_check": {
+        "grounded": true,
+        "issues": [],
+        "notes": ""
+      },
+      "final": {
+        "text": "Regulamin Studiów AGH pozwala na przeniesienie między kierunkami, jednak szczegółowe zasady mogą się różnić. W przypadku Inżynierii Materiałowej, na jedno miejsce przypadało 2,93 osoby (176 miejsc na 60 kandydatów). Aby przenieść się na ten kierunek, powinieneś skontaktować się z dziekanatem oraz zapoznać się z wymaganiami dotyczącymi przeniesień, które mogą obejmować m.in. złożenie odpowiednich dokumentów oraz spełnienie określonych kryteriów.",
+        "via": "fact_check_accept"
+      }
+    },
+    "agent_trace": [
+      "guard -> safe",
+      "intent -> ['progi', 'ogolne']",
+      "retrieve -> 1 graph + 5 vector",
+      "filter -> keep=1 reject=5",
+      "answer",
+      "fact_check -> grounded"
+    ],
+    "final_answer": "Regulamin Studiów AGH pozwala na przeniesienie między kierunkami, jednak szczegółowe zasady mogą się różnić. W przypadku Inżynierii Materiałowej, na jedno miejsce przypadało 2,93 osoby (176 miejsc na 60 kandydatów). Aby przenieść się na ten kierunek, powinieneś skontaktować się z dziekanatem oraz zapoznać się z wymaganiami dotyczącymi przeniesień, które mogą obejmować m.in. złożenie odpowiednich dokumentów oraz spełnienie określonych kryteriów.",
+    "blocked": false,
+    "latency_ms": 10228
+  }
+}

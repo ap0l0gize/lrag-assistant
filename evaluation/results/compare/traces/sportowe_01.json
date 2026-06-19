@@ -1,0 +1,395 @@
+{
+  "id": "sportowe_01",
+  "question": "Za jakie osiągnięcia sportowe mogę zdobyć dodatkowe punkty aplikując na studia i ile tych punktów maksymalnie mogę dostać?",
+  "side_by_side": {
+    "vector": {
+      "final_answer": "Nie znalazłem informacji na temat konkretnych osiągnięć sportowych, za które można zdobyć dodatkowe punkty, ani maksymalnej liczby punktów, jakie można otrzymać. Proszę sprawdzić regulamin rekrutacji lub skontaktować się z uczelnią w celu uzyskania szczegółowych informacji.",
+      "latency_ms": 2571
+    },
+    "hybrid": {
+      "final_answer": "Na podstawie dostarczonego kontekstu, dodatkowe punkty za osiągnięcia sportowe można zdobyć poprzez przynależność do ogólnopolskich organizacji sportowo-turystycznych oraz posiadanie odznak PTTK i innych. Maksymalnie można zdobyć 100 punktów za te osiągnięcia.",
+      "latency_ms": 4351
+    },
+    "agentic": {
+      "final_answer": "Nie mogę potwierdzić tej odpowiedzi na podstawie bazy wiedzy: Odpowiedź asystenta podaje, że maksymalnie można zdobyć 21 punktów za osiągnięcia w Akademickich Mistrzostwach Polski, co jest nieprawidłowe, ponieważ 21 punktów można zdobyć za miejsca 4-8, a maksymalna liczba punktów za osiągnięcia sportowe wynosi 25 (10 za członkostwo, 15 za kadrę narodową) w sumie.",
+      "latency_ms": 36271
+    }
+  },
+  "vector": {
+    "chunks": [
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "Sylabusa dla każdego kierunku znajdziecie tutaj. Czym są punkty ECTS?   Po kilku dniach na Uczelni każdy z Was spotka się z tym skrótem. Co on dokładnie oznacza? Punkty ECTS to miara nakładu pracy studenta wyrażona w godzinach konieczna do osiągnięcia efektów założonych w programie kształcenia. Jeden punkt ECTS odpowiada 25 - 30h pracy studenta. Stają się bardzo ważne przy chęci wzięcia udziału wymianie studenckiej, zmienie kierunku studiów lub niezaliczenia dowolnego przedmiotu.  Paragrafy nie ...",
+        "score": 0.4762
+      },
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "Sylabusa dla każdego kierunku znajdziecie tutaj. Czym są punkty ECTS?   Po kilku dniach na Uczelni każdy z Was spotka się z tym skrótem. Co on dokładnie oznacza? Punkty ECTS to miara nakładu pracy studenta wyrażona w godzinach konieczna do osiągnięcia efektów założonych w programie kształcenia. Jeden punkt ECTS odpowiada 25 - 30h pracy studenta. Stają się bardzo ważne przy chęci wzięcia udziału wymianie studenckiej, zmienie kierunku studiów lub niezaliczenia dowolnego przedmiotu.  Paragrafy nie ...",
+        "score": 0.4762
+      },
+      {
+        "tag": "[PDF] REGULAMIN_swiadczen_2025-2026.pdf",
+        "content": "punktowana jest średnia ocen uzyskana w ostatnim roku nauki na studiach pierwszego stopnia.  Jeżeli ostatni rok studiów pierwszego stopnia trwa jeden semestr, bierze się pod uwagę średnią  ocen uzyskaną w tym semestrze.   2. Absolwentom studiów pierwszego stopnia ukończonych poza AGH, średnia ocen za ostatni rok  studiów uznawana jest na podstawie dokumentu potwierdzającego uzyskaną średnią  ocen   w uczelni macierzystej po jej przeliczeniu na średnią ocen zgodną z Regulaminem studiów ,  jeżeli ...",
+        "score": 0.4943
+      }
+    ],
+    "context": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nSylabusa dla każdego kierunku znajdziecie tutaj.\nCzym są punkty ECTS?\n \nPo kilku dniach na Uczelni każdy z Was spotka się z tym skrótem. Co on dokładnie\noznacza? Punkty ECTS to miara nakładu pracy studenta wyrażona w godzinach\nkonieczna do osiągnięcia efektów założonych w programie kształcenia. Jeden punkt\nECTS odpowiada 25 - 30h pracy studenta. Stają się bardzo ważne przy chęci wzięcia\nudziału wymianie studenckiej, zmienie kierunku studiów lub niezaliczenia dowolnego\nprzedmiotu. \nParagrafy nie gryzą\nPigułka z Regulaminu Studiów\n15\nNasze metody na ściąganie\nPewnie większość uczniów na temat ściągania mogłaby wyciągnąć nie jeden as \nz rękawa, który jest w jego wierzeniu 100% skuteczny. Jak to jednak wygląda na\nstudiach? Czy te tajniki również działają tutaj? \nZanim będziecie chcieli się przekonać uprzedzimy Was tylko, że w przypadku\nstwierdzenia przez prowadzącego niesamodzielności pisania egzaminu/zaliczenia,\nmoże on nie tylko wstawić wam niepoprawialne 2.0 do USOSA, ale także powiadomić\nDziekana Wydziału. \nDo trzech razy sztuka\nKażdy pewnie słyszał o tym jednym, starszym koledze Tomku, który zaliczał jakiś\negzamin 10 razy. Ale ile terminów przysługuje studentowi zgodnie z Regulaminem\nStudiów? Student ma prawo do trzech terminów egzaminu - jednego w terminie\npodstawowym oraz dwóch terminach poprawkowych. \nAle to w takim razie jak ten kolega Tomek pisał ten egzamin 10 razy? Jeśli w dobrej\ngestii prowadzącego jest zrobić więcej terminów - to może je zrobić i nie jest to\n\n[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nSylabusa dla każdego kierunku znajdziecie tutaj.\nCzym są punkty ECTS?\n \nPo kilku dniach na Uczelni każdy z Was spotka się z tym skrótem. Co on dokładnie\noznacza? Punkty ECTS to miara nakładu pracy studenta wyrażona w godzinach\nkonieczna do osiągnięcia efektów założonych w programie kształcenia. Jeden punkt\nECTS odpowiada 25 - 30h pracy studenta. Stają się bardzo ważne przy chęci wzięcia\nudziału wymianie studenckiej, zmienie kierunku studiów lub niezaliczenia dowolnego\nprzedmiotu. \nParagrafy nie gryzą\nPigułka z Regulaminu Studiów\n15\nNasze metody na ściąganie\nPewnie większość uczniów na temat ściągania mogłaby wyciągnąć nie jeden as \nz rękawa, który jest w jego wierzeniu 100% skuteczny. Jak to jednak wygląda na\nstudiach? Czy te tajniki również działają tutaj? \nZanim będziecie chcieli się przekonać uprzedzimy Was tylko, że w przypadku\nstwierdzenia przez prowadzącego niesamodzielności pisania egzaminu/zaliczenia,\nmoże on nie tylko wstawić wam niepoprawialne 2.0 do USOSA, ale także powiadomić\nDziekana Wydziału. \nDo trzech razy sztuka\nKażdy pewnie słyszał o tym jednym, starszym koledze Tomku, który zaliczał jakiś\negzamin 10 razy. Ale ile terminów przysługuje studentowi zgodnie z Regulaminem\nStudiów? Student ma prawo do trzech terminów egzaminu - jednego w terminie\npodstawowym oraz dwóch terminach poprawkowych. \nAle to w takim razie jak ten kolega Tomek pisał ten egzamin 10 razy? Jeśli w dobrej\ngestii prowadzącego jest zrobić więcej terminów - to może je zrobić i nie jest to\n\n[PDF] REGULAMIN_swiadczen_2025-2026.pdf:\npunktowana jest średnia ocen uzyskana w ostatnim roku nauki na studiach pierwszego stopnia. \nJeżeli ostatni rok studiów pierwszego stopnia trwa jeden semestr, bierze się pod uwagę średnią \nocen uzyskaną w tym semestrze.  \n2. Absolwentom studiów pierwszego stopnia ukończonych poza AGH, średnia ocen za ostatni rok \nstudiów uznawana jest na podstawie dokumentu potwierdzającego uzyskaną średnią  ocen  \nw uczelni macierzystej po jej przeliczeniu na średnią ocen zgodną z Regulaminem studiów , \njeżeli skala ocen lub sposób wyliczania średniej w uczelni macierzystej jest inny niż w AGH. \nPrzeliczenie średniej ocen wymaga załączenia do wniosku pisemnego potwierd zenia średniej \nocen ustalonej zgodnie z Regulaminem studiów dokonanego przez uczelnię macierzystą.  \n3. Student, który rozpoczyna w semestrze letnim studia drugiego stopnia w AGH, może otrzymać \nstypendium rektora z uwzględnieniem osiągnięć naukowych, artystycznych lub sportowych. \nJeżeli ubiegał się o to stypendium na podstawie osiągnięć na ostatnim semestrze  studiów \npierwszego stopnia w AGH, tj. semestrze zimowym roku akademickiego, w którym ubiega się \no to świadczenie, przyznana liczba punktów za osiągnięcia naukowe, artystyczne lub sportowe \nnie ulega  zmianie, a wykazane osiągnięcia nie wymagają ponownego ud okumentowania.  \nW sytuacji, w której student nie ubiegał się o stypendium rektora na ostatnim semestrze \nstudiów pierwszego stopnia, we wniosku należy wykazać osiągnięcia z roku akademickiego",
+    "final_answer": "Nie znalazłem informacji na temat konkretnych osiągnięć sportowych, za które można zdobyć dodatkowe punkty, ani maksymalnej liczby punktów, jakie można otrzymać. Proszę sprawdzić regulamin rekrutacji lub skontaktować się z uczelnią w celu uzyskania szczegółowych informacji.",
+    "latency_ms": 2571
+  },
+  "hybrid": {
+    "intent_raw": {
+      "kategorie": [
+        "osiagniecia"
+      ],
+      "kierunek": null,
+      "tryb": null,
+      "przedmiot": null,
+      "egzamin": null,
+      "kontekst": null
+    },
+    "intent": {
+      "kategorie": [
+        "osiagniecia"
+      ],
+      "kierunek": null,
+      "tryb": null,
+      "przedmiot": null,
+      "egzamin": null,
+      "kontekst": null
+    },
+    "graph_context": "[GRAPH — OSIAGNIECIA]\n  kierunek: Inżynieria Biomedyczna | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach tematycznych: elektrycznej, elektronicznej, mechatronicznej, teleinformatycznej, informatycznej, automatycznej'}]\n  kierunek: Mikroelektronika w Technice i Medycynie | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach tematycznych: elektrycznej, elektronicznej, mechatronicznej, teleinformatycznej, informatycznej, automatycznej'}]\n  kierunek: Elektrotechnika | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach tematycznych: elektrycznej, elektronicznej, mechatronicznej, teleinformatycznej, informatycznej, automatycznej'}]\n  kierunek: Elektronika i Telekomunikacja / Electronics and Telecommunications | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach tematycznych: elektrycznej, elektronicznej, mechatronicznej, teleinformatycznej, informatycznej, automatycznej'}]\n  kierunek: Elektronika | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach tematycznych: elektrycznej, elektronicznej, mechatronicznej, teleinformatycznej, informatycznej, automatycznej'}]\n  kierunek: Teleinformatyka | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach tematycznych: teleinformatycznej, informatycznej'}]\n  kierunek: Informatyka i Systemy Inteligentne | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach tematycznych: teleinformatycznej, informatycznej'}]\n  kierunek: Cyberbezpieczeństwo | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach tematycznych: teleinformatycznej, informatycznej'}]\n  kierunek: Computer Science | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach tematycznych: teleinformatycznej, informatycznej'}]\n  kierunek: Nowoczesne Technologie w Kryminalistyce | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach tematycznych: elektrycznej, elektronicznej, mechatronicznej, teleinformatycznej, informatycznej, automatycznej.'}]\n  kierunek: Inżynieria i Analiza Danych | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}, {'max_punktow': 150, 'osiagniecie': 'Finaliści Ogólnopolskiego Konkursu Wiedzy Geologicznej'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci i finaliści Konkursu Geologiczno-Środowiskowego'}, {'max_punktow': 100, 'osiagniecie': 'Przynależność do ogólnopolskich organizacji sportowo-turystycznych i wychowawczych: PTTK, Związek Harcerstwa Polskiego, Związek Harcerstwa Rzeczypospolitej, Polski Związek Alpinizmu'}, {'max_punktow': 100, 'osiagniecie': 'Posiadacze odznak PTTK, Górskiej Oznaki Turystycznej, Odznaki Imprez na Orientację, Zimowej odznaki Górskiej'}, {'max_punktow': 100, 'osiagniecie': 'Uprawnienia przewodnika potwierdzone certyfikatem Geoparków UNESCO: Geoprzewodnik po Krainie Wygasłych Wulkanów, GeoGuide (Geopark Świętokrzyski, Przedgórze Sudeckie), Przewodnik Geoparku „Łuk Mużakowa”'}, {'max_punktow': 100, 'osiagniecie': 'Uczestnicy Międzynarodowego Obozu Geoparkowego'}, {'max_punktow': 100, 'osiagniecie': 'Członkowsko w regionalnych klubach sportowo-turystycznych: kluby speleologiczne, taternictwa jaskiniowego, grotołazów, wysokogórskie, wspinaczkowe, górskie, turystyki górskiej, szkolne koła i kluby turystyczne, aerokluby, kluby jazdy konnej, kluby żeglarskie, rowerowe, wioślarskie, lekkiej atletyki'}]\n  kierunek: Geoturystyka | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}, {'max_punktow': 150, 'osiagniecie': 'Finaliści Ogólnopolskiego Konkursu Wiedzy Geologicznej'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci i finaliści Konkursu Geologiczno-Środowiskowego'}, {'max_punktow': 100, 'osiagniecie': 'Przynależność do ogólnopolskich organizacji sportowo-turystycznych i wychowawczych: PTTK, Związek Harcerstwa Polskiego, Związek Harcerstwa Rzeczypospolitej, Polski Związek Alpinizmu'}, {'max_punktow': 100, 'osiagniecie': 'Posiadacze odznak PTTK, Górskiej Oznaki Turystycznej, Odznaki Imprez na Orientację, Zimowej odznaki Górskiej'}, {'max_punktow': 100, 'osiagniecie': 'Uprawnienia przewodnika potwierdzone certyfikatem Geoparków UNESCO: Geoprzewodnik po Krainie Wygasłych Wulkanów, GeoGuide (Geopark Świętokrzyski, Przedgórze Sudeckie), Przewodnik Geoparku „Łuk Mużakowa”'}, {'max_punktow': 100, 'osiagniecie': 'Uczestnicy Międzynarodowego Obozu Geoparkowego'}, {'max_punktow': 100, 'osiagniecie': 'Członkowsko w regionalnych klubach sportowo-turystycznych: kluby speleologiczne, taternictwa jaskiniowego, grotołazów, wysokogórskie, wspinaczkowe, górskie, turystyki górskiej, szkolne koła i kluby turystyczne, aerokluby, kluby jazdy konnej, kluby żeglarskie, rowerowe, wioślarskie, lekkiej atletyki'}]\n  kierunek: Geologia Stosowana | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}, {'max_punktow': 150, 'osiagniecie': 'Finaliści Ogólnopolskiego Konkursu Wiedzy Geologicznej'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci i finaliści Konkursu Geologiczno-Środowiskowego'}, {'max_punktow': 100, 'osiagniecie': 'Przynależność do ogólnopolskich organizacji sportowo-turystycznych i wychowawczych: PTTK, Związek Harcerstwa Polskiego, Związek Harcerstwa Rzeczypospolitej, Polski Związek Alpinizmu'}, {'max_punktow': 100, 'osiagniecie': 'Posiadacze odznak PTTK, Górskiej Oznaki Turystycznej, Odznaki Imprez na Orientację, Zimowej odznaki Górskiej'}, {'max_punktow': 100, 'osiagniecie': 'Uprawnienia przewodnika potwierdzone certyfikatem Geoparków UNESCO: Geoprzewodnik po Krainie Wygasłych Wulkanów, GeoGuide (Geopark Świętokrzyski, Przedgórze Sudeckie), Przewodnik Geoparku „Łuk Mużakowa”'}, {'max_punktow': 100, 'osiagniecie': 'Uczestnicy Międzynarodowego Obozu Geoparkowego'}, {'max_punktow': 100, 'osiagniecie': 'Członkowsko w regionalnych klubach sportowo-turystycznych: kluby speleologiczne, taternictwa jaskiniowego, grotołazów, wysokogórskie, wspinaczkowe, górskie, turystyki górskiej, szkolne koła i kluby turystyczne, aerokluby, kluby jazdy konnej, kluby żeglarskie, rowerowe, wioślarskie, lekkiej atletyki'}]\n  kierunek: Geoinformatyka | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}, {'max_punktow': 150, 'osiagniecie': 'Finaliści Ogólnopolskiego Konkursu Wiedzy Geologicznej'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci i finaliści Konkursu Geologiczno-Środowiskowego'}, {'max_punktow': 100, 'osiagniecie': 'Przynależność do ogólnopolskich organizacji sportowo-turystycznych i wychowawczych: PTTK, Związek Harcerstwa Polskiego, Związek Harcerstwa Rzeczypospolitej, Polski Związek Alpinizmu'}, {'max_punktow': 100, 'osiagniecie': 'Posiadacze odznak PTTK, Górskiej Oznaki Turystycznej, Odznaki Imprez na Orientację, Zimowej odznaki Górskiej'}, {'max_punktow': 100, 'osiagniecie': 'Uprawnienia przewodnika potwierdzone certyfikatem Geoparków UNESCO: Geoprzewodnik po Krainie Wygasłych Wulkanów, GeoGuide (Geopark Świętokrzyski, Przedgórze Sudeckie), Przewodnik Geoparku „Łuk Mużakowa”'}, {'max_punktow': 100, 'osiagniecie': 'Uczestnicy Międzynarodowego Obozu Geoparkowego'}, {'max_punktow': 100, 'osiagniecie': 'Członkowsko w regionalnych klubach sportowo-turystycznych: kluby speleologiczne, taternictwa jaskiniowego, grotołazów, wysokogórskie, wspinaczkowe, górskie, turystyki górskiej, szkolne koła i kluby turystyczne, aerokluby, kluby jazdy konnej, kluby żeglarskie, rowerowe, wioślarskie, lekkiej atletyki'}]\n  kierunek: Geofizyka | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}, {'max_punktow': 150, 'osiagniecie': 'Finaliści Ogólnopolskiego Konkursu Wiedzy Geologicznej'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci i finaliści Konkursu Geologiczno-Środowiskowego'}, {'max_punktow': 100, 'osiagniecie': 'Przynależność do ogólnopolskich organizacji sportowo-turystycznych i wychowawczych: PTTK, Związek Harcerstwa Polskiego, Związek Harcerstwa Rzeczypospolitej, Polski Związek Alpinizmu'}, {'max_punktow': 100, 'osiagniecie': 'Posiadacze odznak PTTK, Górskiej Oznaki Turystycznej, Odznaki Imprez na Orientację, Zimowej odznaki Górskiej'}, {'max_punktow': 100, 'osiagniecie': 'Uprawnienia przewodnika potwierdzone certyfikatem Geoparków UNESCO: Geoprzewodnik po Krainie Wygasłych Wulkanów, GeoGuide (Geopark Świętokrzyski, Przedgórze Sudeckie), Przewodnik Geoparku „Łuk Mużakowa”'}, {'max_punktow': 100, 'osiagniecie': 'Uczestnicy Międzynarodowego Obozu Geoparkowego'}, {'max_punktow': 100, 'osiagniecie': 'Członkowsko w regionalnych klubach sportowo-turystycznych: kluby speleologiczne, taternictwa jaskiniowego, grotołazów, wysokogórskie, wspinaczkowe, górskie, turystyki górskiej, szkolne koła i kluby turystyczne, aerokluby, kluby jazdy konnej, kluby żeglarskie, rowerowe, wioślarskie, lekkiej atletyki'}]\n  kierunek: Ekologiczne Źródła Energii | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}, {'max_punktow': 150, 'osiagniecie': 'Finaliści Ogólnopolskiego Konkursu Wiedzy Geologicznej'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci i finaliści Konkursu Geologiczno-Środowiskowego'}, {'max_punktow': 100, 'osiagniecie': 'Przynależność do ogólnopolskich organizacji sportowo-turystycznych i wychowawczych: PTTK, Związek Harcerstwa Polskiego, Związek Harcerstwa Rzeczypospolitej, Polski Związek Alpinizmu'}, {'max_punktow': 100, 'osiagniecie': 'Posiadacze odznak PTTK, Górskiej Oznaki Turystycznej, Odznaki Imprez na Orientację, Zimowej odznaki Górskiej'}, {'max_punktow': 100, 'osiagniecie': 'Uprawnienia przewodnika potwierdzone certyfikatem Geoparków UNESCO: Geoprzewodnik po Krainie Wygasłych Wulkanów, GeoGuide (Geopark Świętokrzyski, Przedgórze Sudeckie), Przewodnik Geoparku „Łuk Mużakowa”'}, {'max_punktow': 100, 'osiagniecie': 'Uczestnicy Międzynarodowego Obozu Geoparkowego'}, {'max_punktow': 100, 'osiagniecie': 'Członkowsko w regionalnych klubach sportowo-turystycznych: kluby speleologiczne, taternictwa jaskiniowego, grotołazów, wysokogórskie, wspinaczkowe, górskie, turystyki górskiej, szkolne koła i kluby turystyczne, aerokluby, kluby jazdy konnej, kluby żeglarskie, rowerowe, wioślarskie, lekkiej atletyki'}]\n  kierunek: Inżynieria Naftowa i Gazownicza | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}, {'max_punktow': 150, 'osiagniecie': 'Finaliści Ogólnopolskiego Konkursu Wiedzy Geologicznej'}]\n  kierunek: Inżynieria i Ochrona Środowiska | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}, {'max_punktow': 150, 'osiagniecie': 'Finaliści Ogólnopolskiego Konkursu Wiedzy Geologicznej'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci i finaliści Konkursu Geologiczno-Środowiskowego'}, {'max_punktow': 100, 'osiagniecie': 'Przynależność do ogólnopolskich organizacji sportowo-turystycznych i wychowawczych: PTTK, Związek Harcerstwa Polskiego, Związek Harcerstwa Rzeczypospolitej, Polski Związek Alpinizmu'}, {'max_punktow': 100, 'osiagniecie': 'Posiadacze odznak PTTK, Górskiej Oznaki Turystycznej, Odznaki Imprez na Orientację, Zimowej odznaki Górskiej'}, {'max_punktow': 100, 'osiagniecie': 'Uprawnienia przewodnika potwierdzone certyfikatem Geoparków UNESCO: Geoprzewodnik po Krainie Wygasłych Wulkanów, GeoGuide (Geopark Świętokrzyski, Przedgórze Sudeckie), Przewodnik Geoparku „Łuk Mużakowa”'}, {'max_punktow': 100, 'osiagniecie': 'Uczestnicy Międzynarodowego Obozu Geoparkowego'}, {'max_punktow': 100, 'osiagniecie': 'Członkowsko w regionalnych klubach sportowo-turystycznych: kluby speleologiczne, taternictwa jaskiniowego, grotołazów, wysokogórskie, wspinaczkowe, górskie, turystyki górskiej, szkolne koła i kluby turystyczne, aerokluby, kluby jazdy konnej, kluby żeglarskie, rowerowe, wioślarskie, lekkiej atletyki'}]\n  kierunek: Geotechnologie Otworowe | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}, {'max_punktow': 150, 'osiagniecie': 'Finaliści Ogólnopolskiego Konkursu Wiedzy Geologicznej'}]\n  kierunek: Energetyka Odnawialna i Zarządzanie Energią | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci Krajowego Konkursu Energetycznego im. profesora Jacka Malko'}]\n  kierunek: Energetyka | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci Krajowego Konkursu Energetycznego im. profesora Jacka Malko'}]\n  kierunek: Inżynieria Procesów Przemysłowych | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}]\n  kierunek: Inżynieria Metali | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}]\n  kierunek: Edukacja Techniczno-Informatyczna | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”'}]\n  kierunek: Mechanika i Budowa Maszyn | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci (pierwsze 3 miejsca) Skawińskiego Turnieju Wiedzy Mechatronicznej'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci (pierwsze 3 miejsca) Małopolskiego Konkursu Własnych Prac Technicznych'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci (pierwsze 3 miejsca) Studenckiego Konkursu Inżynierskiego Projektowania Prototypów dla EneRgetyki'}]\n  kierunek: Mechanical Engineering | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci (pierwsze 3 miejsca) Skawińskiego Turnieju Wiedzy Mechatronicznej'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci (pierwsze 3 miejsca) Małopolskiego Konkursu Własnych Prac Technicznych'}]\n  kierunek: Inżynieria Mechatroniczna / Mechatronic Engineering | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci (pierwsze 3 miejsca) Skawińskiego Turnieju Wiedzy Mechatronicznej'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci (pierwsze 3 miejsca) Małopolskiego Konkursu Własnych Prac Technicznych'}]\n  kierunek: Zarządzanie | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Finaliści Ogólnopolskich Interdyscyplinarnych Zawodów o Tematyce Lean Management „OLEANPIADA”'}]\n  kierunek: Inżynieria i Zarządzanie Procesami Przemysłowymi. | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Finaliści Ogólnopolskich Interdyscyplinarnych Zawodów o Tematyce Lean Management „OLEANPIADA”'}]\n  kierunek: Zarządzanie i Inżynieria Produkcji | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Finaliści Ogólnopolskich Interdyscyplinarnych Zawodów o Tematyce Lean Management „OLEANPIADA”'}]\n  kierunek: Inżynieria i Monitoring Środowiska | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci i finaliści Konkursu Geologiczno-Środowiskowego'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci Programu oświatowego dla szkół ponadpodstawowych „INŻYNIEROWIE PRZYSZŁOŚCI”,'}, {'max_punktow': 100, 'osiagniecie': 'Posiadacze odznak PTTK, Górskiej Oznaki Turystycznej, Odznaki Imprez na Orientację'}, {'max_punktow': 100, 'osiagniecie': 'Przynależność do ogólnopolskich organizacji sportowo-turystycznych i wychowawczych: PTTK, Związek Harcerstwa Polskiego, Związek Harcerstwa Rzeczypospolitej, Polski Związek Alpinizmu'}]\n  kierunek: Socjologia | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Mistrzostw Polski Debat Oksfordzkich'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci Pucharu Polski Debat Oksfordzkich'}, {'max_punktow': 100, 'osiagniecie': 'udokumentowane członkostwo i co najmniej roczna działalność w Młodzieżowej Radzie Powiatowej, Młodzieżowym Sejmiku Województwa'}]\n  kierunek: Kulturoznawstwo | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Laureaci Mistrzostw Polski Debat Oksfordzkich'}, {'max_punktow': 150, 'osiagniecie': 'Laureaci Pucharu Polski Debat Oksfordzkich'}, {'max_punktow': 100, 'osiagniecie': 'udokumentowane członkostwo i co najmniej roczna działalność w Młodzieżowej Radzie Powiatowej, Młodzieżowym Sejmiku Województwa'}]",
+    "vector_context": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nSylabusa dla każdego kierunku znajdziecie tutaj.\nCzym są punkty ECTS?\n \nPo kilku dniach na Uczelni każdy z Was spotka się z tym skrótem. Co on dokładnie\noznacza? Punkty ECTS to miara nakładu pracy studenta wyrażona w godzinach\nkonieczna do osiągnięcia efektów założonych w programie kształcenia. Jeden punkt\nECTS odpowiada 25 - 30h pracy studenta. Stają się bardzo ważne przy chęci wzięcia\nudziału wymianie studenckiej, zmienie kierunku studiów lub niezaliczenia dowolnego\nprzedmiotu. \nParagrafy nie gryzą\nPigułka z Regulaminu Studiów\n15\nNasze metody na ściąganie\nPewnie większość uczniów na temat ściągania mogłaby wyciągnąć nie jeden as \nz rękawa, który jest w jego wierzeniu 100% skuteczny. Jak to jednak wygląda na\nstudiach? Czy te tajniki również działają tutaj? \nZanim będziecie chcieli się przekonać uprzedzimy Was tylko, że w przypadku\nstwierdzenia przez prowadzącego niesamodzielności pisania egzaminu/zaliczenia,\nmoże on nie tylko wstawić wam niepoprawialne 2.0 do USOSA, ale także powiadomić\nDziekana Wydziału. \nDo trzech razy sztuka\nKażdy pewnie słyszał o tym jednym, starszym koledze Tomku, który zaliczał jakiś\negzamin 10 razy. Ale ile terminów przysługuje studentowi zgodnie z Regulaminem\nStudiów? Student ma prawo do trzech terminów egzaminu - jednego w terminie\npodstawowym oraz dwóch terminach poprawkowych. \nAle to w takim razie jak ten kolega Tomek pisał ten egzamin 10 razy? Jeśli w dobrej\ngestii prowadzącego jest zrobić więcej terminów - to może je zrobić i nie jest to\n\n[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf:\nSylabusa dla każdego kierunku znajdziecie tutaj.\nCzym są punkty ECTS?\n \nPo kilku dniach na Uczelni każdy z Was spotka się z tym skrótem. Co on dokładnie\noznacza? Punkty ECTS to miara nakładu pracy studenta wyrażona w godzinach\nkonieczna do osiągnięcia efektów założonych w programie kształcenia. Jeden punkt\nECTS odpowiada 25 - 30h pracy studenta. Stają się bardzo ważne przy chęci wzięcia\nudziału wymianie studenckiej, zmienie kierunku studiów lub niezaliczenia dowolnego\nprzedmiotu. \nParagrafy nie gryzą\nPigułka z Regulaminu Studiów\n15\nNasze metody na ściąganie\nPewnie większość uczniów na temat ściągania mogłaby wyciągnąć nie jeden as \nz rękawa, który jest w jego wierzeniu 100% skuteczny. Jak to jednak wygląda na\nstudiach? Czy te tajniki również działają tutaj? \nZanim będziecie chcieli się przekonać uprzedzimy Was tylko, że w przypadku\nstwierdzenia przez prowadzącego niesamodzielności pisania egzaminu/zaliczenia,\nmoże on nie tylko wstawić wam niepoprawialne 2.0 do USOSA, ale także powiadomić\nDziekana Wydziału. \nDo trzech razy sztuka\nKażdy pewnie słyszał o tym jednym, starszym koledze Tomku, który zaliczał jakiś\negzamin 10 razy. Ale ile terminów przysługuje studentowi zgodnie z Regulaminem\nStudiów? Student ma prawo do trzech terminów egzaminu - jednego w terminie\npodstawowym oraz dwóch terminach poprawkowych. \nAle to w takim razie jak ten kolega Tomek pisał ten egzamin 10 razy? Jeśli w dobrej\ngestii prowadzącego jest zrobić więcej terminów - to może je zrobić i nie jest to\n\n[PDF] REGULAMIN_swiadczen_2025-2026.pdf:\npunktowana jest średnia ocen uzyskana w ostatnim roku nauki na studiach pierwszego stopnia. \nJeżeli ostatni rok studiów pierwszego stopnia trwa jeden semestr, bierze się pod uwagę średnią \nocen uzyskaną w tym semestrze.  \n2. Absolwentom studiów pierwszego stopnia ukończonych poza AGH, średnia ocen za ostatni rok \nstudiów uznawana jest na podstawie dokumentu potwierdzającego uzyskaną średnią  ocen  \nw uczelni macierzystej po jej przeliczeniu na średnią ocen zgodną z Regulaminem studiów , \njeżeli skala ocen lub sposób wyliczania średniej w uczelni macierzystej jest inny niż w AGH. \nPrzeliczenie średniej ocen wymaga załączenia do wniosku pisemnego potwierd zenia średniej \nocen ustalonej zgodnie z Regulaminem studiów dokonanego przez uczelnię macierzystą.  \n3. Student, który rozpoczyna w semestrze letnim studia drugiego stopnia w AGH, może otrzymać \nstypendium rektora z uwzględnieniem osiągnięć naukowych, artystycznych lub sportowych. \nJeżeli ubiegał się o to stypendium na podstawie osiągnięć na ostatnim semestrze  studiów \npierwszego stopnia w AGH, tj. semestrze zimowym roku akademickiego, w którym ubiega się \no to świadczenie, przyznana liczba punktów za osiągnięcia naukowe, artystyczne lub sportowe \nnie ulega  zmianie, a wykazane osiągnięcia nie wymagają ponownego ud okumentowania.  \nW sytuacji, w której student nie ubiegał się o stypendium rektora na ostatnim semestrze \nstudiów pierwszego stopnia, we wniosku należy wykazać osiągnięcia z roku akademickiego",
+    "chunks": [
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "Sylabusa dla każdego kierunku znajdziecie tutaj. Czym są punkty ECTS?   Po kilku dniach na Uczelni każdy z Was spotka się z tym skrótem. Co on dokładnie oznacza? Punkty ECTS to miara nakładu pracy studenta wyrażona w godzinach konieczna do osiągnięcia efektów założonych w programie kształcenia. Jeden punkt ECTS odpowiada 25 - 30h pracy studenta. Stają się bardzo ważne przy chęci wzięcia udziału wymianie studenckiej, zmienie kierunku studiów lub niezaliczenia dowolnego przedmiotu.  Paragrafy nie ...",
+        "score": 0.4762
+      },
+      {
+        "tag": "[PDF] Jak studiować i nie zwariować AGH krok po kroku.pdf",
+        "content": "Sylabusa dla każdego kierunku znajdziecie tutaj. Czym są punkty ECTS?   Po kilku dniach na Uczelni każdy z Was spotka się z tym skrótem. Co on dokładnie oznacza? Punkty ECTS to miara nakładu pracy studenta wyrażona w godzinach konieczna do osiągnięcia efektów założonych w programie kształcenia. Jeden punkt ECTS odpowiada 25 - 30h pracy studenta. Stają się bardzo ważne przy chęci wzięcia udziału wymianie studenckiej, zmienie kierunku studiów lub niezaliczenia dowolnego przedmiotu.  Paragrafy nie ...",
+        "score": 0.4762
+      },
+      {
+        "tag": "[PDF] REGULAMIN_swiadczen_2025-2026.pdf",
+        "content": "punktowana jest średnia ocen uzyskana w ostatnim roku nauki na studiach pierwszego stopnia.  Jeżeli ostatni rok studiów pierwszego stopnia trwa jeden semestr, bierze się pod uwagę średnią  ocen uzyskaną w tym semestrze.   2. Absolwentom studiów pierwszego stopnia ukończonych poza AGH, średnia ocen za ostatni rok  studiów uznawana jest na podstawie dokumentu potwierdzającego uzyskaną średnią  ocen   w uczelni macierzystej po jej przeliczeniu na średnią ocen zgodną z Regulaminem studiów ,  jeżeli ...",
+        "score": 0.4943
+      }
+    ],
+    "final_answer": "Na podstawie dostarczonego kontekstu, dodatkowe punkty za osiągnięcia sportowe można zdobyć poprzez przynależność do ogólnopolskich organizacji sportowo-turystycznych oraz posiadanie odznak PTTK i innych. Maksymalnie można zdobyć 100 punktów za te osiągnięcia.",
+    "latency_ms": 4351
+  },
+  "agentic": {
+    "stages": {
+      "guard": {
+        "safe": true,
+        "category": "safe",
+        "reason": "Pytanie dotyczy rekrutacji na studia i zasad przyznawania punktów za osiągnięcia sportowe."
+      },
+      "intent": {
+        "raw": {
+          "kategorie": [
+            "osiagniecia"
+          ],
+          "kierunek": null,
+          "tryb": null,
+          "przedmiot": null,
+          "egzamin": null,
+          "kontekst": null
+        },
+        "normalized": {
+          "kategorie": [
+            "osiagniecia"
+          ],
+          "kierunek": null,
+          "tryb": null,
+          "przedmiot": null,
+          "egzamin": null,
+          "kontekst": null
+        }
+      },
+      "retrieve": {
+        "graph_count": 33,
+        "vector_count": 5,
+        "items_total": 38,
+        "items_preview": [
+          {
+            "id": "graph:osiagniecia:0",
+            "source": "graph",
+            "content_preview": "kierunek: Inżynieria Biomedyczna | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących g"
+          },
+          {
+            "id": "graph:osiagniecia:1",
+            "source": "graph",
+            "content_preview": "kierunek: Mikroelektronika w Technice i Medycynie | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej "
+          },
+          {
+            "id": "graph:osiagniecia:2",
+            "source": "graph",
+            "content_preview": "kierunek: Elektrotechnika | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach "
+          },
+          {
+            "id": "graph:osiagniecia:3",
+            "source": "graph",
+            "content_preview": "kierunek: Elektronika i Telekomunikacja / Electronics and Telecommunications | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Ele"
+          },
+          {
+            "id": "graph:osiagniecia:4",
+            "source": "graph",
+            "content_preview": "kierunek: Elektronika | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach tema"
+          },
+          {
+            "id": "graph:osiagniecia:5",
+            "source": "graph",
+            "content_preview": "kierunek: Teleinformatyka | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach "
+          },
+          {
+            "id": "graph:osiagniecia:6",
+            "source": "graph",
+            "content_preview": "kierunek: Informatyka i Systemy Inteligentne | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w nas"
+          },
+          {
+            "id": "graph:osiagniecia:7",
+            "source": "graph",
+            "content_preview": "kierunek: Cyberbezpieczeństwo | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grup"
+          },
+          {
+            "id": "graph:osiagniecia:8",
+            "source": "graph",
+            "content_preview": "kierunek: Computer Science | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej w następujących grupach"
+          },
+          {
+            "id": "graph:osiagniecia:9",
+            "source": "graph",
+            "content_preview": "kierunek: Nowoczesne Technologie w Kryminalistyce | osiagniecia: [{'max_punktow': 150, 'osiagniecie': 'Osoby zakwalifikowane do etapu IIB Ogólnopolskiej Olimpiady Wiedzy Elektrycznej i Elektronicznej "
+          }
+        ]
+      },
+      "filter": {
+        "summary": {
+          "keep": 1,
+          "reject": 37
+        },
+        "decisions": [
+          {
+            "id": "graph:osiagniecia:0",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w olimpiadzie wiedzy elektrycznej i elektronicznej, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:1",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w olimpiadzie wiedzy elektrycznej i elektronicznej, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:2",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w olimpiadzie wiedzy elektrycznej i elektronicznej, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:3",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w olimpiadzie wiedzy elektrycznej i elektronicznej, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:4",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w olimpiadzie wiedzy elektrycznej i elektronicznej, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:5",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w olimpiadzie wiedzy elektrycznej i elektronicznej, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:6",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w olimpiadzie wiedzy elektrycznej i elektronicznej, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:7",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w olimpiadzie wiedzy elektrycznej i elektronicznej, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:8",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w olimpiadzie wiedzy elektrycznej i elektronicznej, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:9",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w olimpiadzie wiedzy elektrycznej i elektronicznej, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:10",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:11",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:12",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:13",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:14",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:15",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:16",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:17",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:18",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:19",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:20",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:21",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:22",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:23",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:24",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z mechatroniką, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:25",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z mechatroniką, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:26",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z mechatroniką, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:27",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w zawodach o tematyce Lean Management, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:28",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w zawodach o tematyce Lean Management, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:29",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w zawodach o tematyce Lean Management, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:30",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w konkursach związanych z geologią, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:31",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w debatach oksfordzkich, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "graph:osiagniecia:32",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy osiągnięć w debatach oksfordzkich, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "vector:pdf:0",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy punktów ECTS, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "vector:pdf:1",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy punktów ECTS, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "vector:pdf:2",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy średniej ocen, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          },
+          {
+            "id": "vector:pdf:3",
+            "verdict": "keep",
+            "reason": "Fragment zawiera informacje o punktach za osiągnięcia sportowe, co jest bezpośrednio związane z pytaniem."
+          },
+          {
+            "id": "vector:pdf:4",
+            "verdict": "reject",
+            "reason": "Fragment dotyczy stypendiów, co nie jest związane z pytaniem o osiągnięcia sportowe."
+          }
+        ]
+      },
+      "answer": {
+        "draft_answer": "Możesz zdobyć dodatkowe punkty za następujące osiągnięcia sportowe:\n\n1. Członkostwo w KU AZS AGH - 10 punktów.\n2. Posiadanie statusu członka kadry narodowej - 15 punktów.\n3. Miejsca 4-8 w Akademickich Mistrzostwach Polski - 21 punktów.\n\nMaksymalnie możesz zdobyć 21 punktów za osiągnięcia w Akademickich Mistrzostwach Polski."
+      },
+      "fact_check": {
+        "grounded": false,
+        "issues": [
+          "Odpowiedź asystenta podaje, że maksymalnie można zdobyć 21 punktów za osiągnięcia w Akademickich Mistrzostwach Polski, co jest nieprawidłowe, ponieważ 21 punktów można zdobyć za miejsca 4-8, a maksymalna liczba punktów za osiągnięcia sportowe wynosi 25 (10 za członkostwo, 15 za kadrę narodową) w sumie."
+        ],
+        "notes": "Odpowiedź asystenta zawiera nieścisłość w maksymalnej liczbie punktów, co prowadzi do halucynacji."
+      },
+      "final": {
+        "text": "Nie mogę potwierdzić tej odpowiedzi na podstawie bazy wiedzy: Odpowiedź asystenta podaje, że maksymalnie można zdobyć 21 punktów za osiągnięcia w Akademickich Mistrzostwach Polski, co jest nieprawidłowe, ponieważ 21 punktów można zdobyć za miejsca 4-8, a maksymalna liczba punktów za osiągnięcia sportowe wynosi 25 (10 za członkostwo, 15 za kadrę narodową) w sumie.",
+        "via": "fact_check_reject"
+      }
+    },
+    "agent_trace": [
+      "guard -> safe",
+      "intent -> ['osiagniecia']",
+      "retrieve -> 33 graph + 5 vector",
+      "filter -> keep=1 reject=37",
+      "answer",
+      "fact_check -> rejected",
+      "clarify"
+    ],
+    "final_answer": "Nie mogę potwierdzić tej odpowiedzi na podstawie bazy wiedzy: Odpowiedź asystenta podaje, że maksymalnie można zdobyć 21 punktów za osiągnięcia w Akademickich Mistrzostwach Polski, co jest nieprawidłowe, ponieważ 21 punktów można zdobyć za miejsca 4-8, a maksymalna liczba punktów za osiągnięcia sportowe wynosi 25 (10 za członkostwo, 15 za kadrę narodową) w sumie.",
+    "blocked": false,
+    "latency_ms": 36271
+  }
+}
