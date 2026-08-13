@@ -1,48 +1,56 @@
-# Ontologia grafu (Relacje i węzły)
+# AGH-AURA — hybrid RAG assistant
 
+Asystent uczelniany AGH: porównanie trzech architektur RAG (wektorowy, hybrydowy GraphRAG, agentowy LangGraph).
 
-**Węzły (Nodes)**
-* `Kierunek` (właściwości: *stopien*, *wydzial*)
-* `Dyscyplina_Naukowa`
-* `Tryb_Studiow` (np. stacjonarne)
-* `Olimpiada_Konkurs`
-* `Egzamin_Wstepny`
-* `Cykl_Rekrutacyjny`
-* `Etap_Rekrutacji`
-* `Statystyka_Rekrutacyjna`
-* `Wzor_Rekrutacyjny`
-* `Przedmiot_Maturalny`
-* `Poziom_Egzaminu` (np. podstawa/rozszerzenie)
+## Wymagania
 
----
+- Python 3.11+
+- [Neo4j](https://neo4j.com/) (lokalnie, domyślnie `bolt://localhost:7687`)
+- [Ollama](https://ollama.com/) z modelem `nomic-embed-text` (embeddingi)
+- Klucz API [OpenRouter](https://openrouter.ai/)
 
-**Relacje i ich Właściwości**
+## Quickstart (od zera)
 
-**1. Struktura Kierunków i Progi**
-* `(Kierunek) -[:NALEZY_DO]-> (Dyscyplina_Naukowa)`
-* `(Kierunek) -[:OFEROWANY_JAKO]-> (Tryb_Studiow)`
-* `(Tryb_Studiow) -[:MIAL_WYNIKI_W_ROKU]-> (Statystyka_Rekrutacyjna)` 
-  * *Właściwości:* `rok_akademicki`, `prog_punktowy`, `limit_miejsc`
+```powershell
+python -m venv .venv
+.\.venv\Scripts\pip install -r requirements.txt
+copy .env.example .env   # uzupełnij OPENROUTER_API_KEY i NEO4J_PASSWORD
 
-**2. Olimpiady i Zwolnienia z Rekrutacji**
-* `(Olimpiada_Konkurs) -[:ZWALNIA_Z_REKRUTACJI_NA]-> (Kierunek)` 
-  * *Właściwości:* `dziedzina`, `wymagany_tytul`, `typ_uprawnienia`
+# Uruchom Neo4j, następnie:
+ollama pull nomic-embed-text
 
-**3. Egzaminy Wstępne (II stopień)**
-* `(Kierunek) -[:WYMAGA_EGZAMINU]-> (Egzamin_Wstepny)` 
-  * *Właściwości:* `forma_i_sposob`, `uznanie_kierunkowego`, `data_I_cykl`, `data_II_cykl`
+# Zbuduj bazę wiedzy z data/ (Neo4j + Chroma w ./db):
+python ingest_hybrid.py
 
-**4. Kalendarz i Terminy**
-* `(Cykl_Rekrutacyjny) -[:SKLADA_SIE_Z]-> (Etap_Rekrutacji)` 
-  * *Właściwości:* `data_rozpoczecia`, `data_zakonczenia`, `godzina_zakonczenia`, `wymaga_obecnosci`
+# Porównaj trzy pipeline'y na pytaniach z evaluation/questions.json:
+python evaluation/run_compare.py --id terminy_01      # jedno pytanie
+python evaluation/run_compare.py                        # pełny benchmark
+```
 
-**5. Wzory i Przeliczniki Maturalne**
-* `(Kierunek) -[:WYKORZYSTUJE_WZOR]-> (Wzor_Rekrutacyjny)`
-* `(Kierunek) -[:UWZGLEDNIA_W_M]-> (Przedmiot_Maturalny)` 
-  * *Właściwości:* `waga_skladnika`
-* `(Kierunek) -[:UWZGLEDNIA_W_P1]-> (Przedmiot_Maturalny)` 
-  * *Właściwości:* `waga_skladnika`, `warunek_wykluczajacy`
-* `(Kierunek) -[:UWZGLEDNIA_W_P2]-> (Przedmiot_Maturalny)` 
-  * *Właściwości:* `waga_skladnika`
-* `(Przedmiot_Maturalny) -[:ZDAWANY_NA]-> (Poziom_Egzaminu)` 
-  * *Właściwości:* `przelicznik_poziomu`
+## Wyniki
+
+Po `run_compare.py` wyniki trafiają do:
+
+- `evaluation/results/compare/results.json` — zbiorcze wyniki
+- `evaluation/results/compare/report.md` — raport side-by-side
+- `evaluation/results/compare/traces/{id}.json` — pełne trace per pytanie
+
+Katalogi `db/` i `evaluation/results/` są generowane lokalnie i nie powinny trafiać do repozytorium.
+
+## Struktura repozytorium
+
+```
+agents/          pipeline agentowy (LangGraph)
+pipelines/       baseline wektorowy i hybrydowy
+retrieval/       pobieranie z Neo4j i Chroma
+evaluation/      run_compare.py + questions.json
+data/            źródłowe CSV (graf) i PDF (wektory)
+ingest_hybrid.py  ładowanie data/ → Neo4j + ./db
+```
+
+## Dane źródłowe
+
+- `data/GraphRAG data/` — tabele CSV (progi, terminy, matury, egzaminy zawodowe itd.)
+- `data/RAG data/` — dokumenty PDF do wyszukiwania wektorowego
+
+Bez uruchomienia `ingest_hybrid.py` (przy pustym Neo4j / Chroma) compare nie przejdzie preflight.
